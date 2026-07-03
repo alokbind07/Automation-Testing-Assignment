@@ -19,37 +19,6 @@ import java.util.Random;
 
 public class OnboardingTest extends BaseTest {
 
-    public static String generateValidNPI() {
-        Random rand = new Random();
-        int[] digits = new int[9];
-        digits[0] = 1;
-        for (int i = 1; i < 9; i++) {
-            digits[i] = rand.nextInt(10);
-        }
-
-        int sum = 24; // 8 (from prefix index 0) + 0 (index 1 * 2) + 8 (index 2) + 8 (index 3 * 2) + 0
-                      // (index 4)
-
-        for (int i = 0; i < 9; i++) {
-            int val = digits[i];
-            if (i % 2 == 0) {
-                val = val * 2;
-                if (val >= 10) {
-                    val = val - 9;
-                }
-            }
-            sum += val;
-        }
-
-        int checkDigit = (10 - (sum % 10)) % 10;
-        StringBuilder sb = new StringBuilder();
-        for (int d : digits) {
-            sb.append(d);
-        }
-        sb.append(checkDigit);
-        return sb.toString();
-    }
-
     @Test
     public void testSuccessfulOnboarding() throws Exception {
         String email = ConfigReader.getProperty("email");

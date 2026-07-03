@@ -1,1183 +1,149 @@
-2026-07-03 09:23:45 [main] INFO  com.automation.utils.ReportUtils - Initializing ExtentReports...
-2026-07-03 09:23:46 [main] INFO  com.automation.tests.BaseTest - Test suite configuration initialized.
-2026-07-03 09:23:46 [main] INFO  com.automation.utils.ReportUtils - Started report test: 'testFailedLoginWithInvalidCredentials'
-2026-07-03 09:23:46 [main] INFO  com.automation.utils.ConfigReader - Configuration properties loaded successfully.
-2026-07-03 09:23:46 [main] INFO  com.automation.tests.BaseTest - Initializing browser: chrome
-2026-07-03 09:23:49 [main] INFO  com.automation.tests.BaseTest - Navigating to URL: http://mumbai.staging-provider-passport.s3-website.ap-south-1.amazonaws.com/#/auth/login
-2026-07-03 09:23:50 [main] INFO  com.automation.utils.ReportUtils - Running negative test case: Login with invalid credentials...
-2026-07-03 09:23:50 [main] INFO  com.automation.utils.ReportUtils - Attempting login with invalid email: invalid_user_8404@gmail.com and invalid password.
-2026-07-03 09:23:50 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[contains(., 'Password')] | //span[contains(text(), 'Password')] | //*[text()='Password'] to be clickable (Timeout: 15s)
-2026-07-03 09:23:57 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[contains(., 'Password')] | //span[contains(text(), 'Password')] | //*[text()='Password']
-2026-07-03 09:23:57 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'invalid_user_8404@gmail.com' in element By.xpath: //input[@type='email' or @placeholder='email@example.com' or contains(@placeholder, 'email')]
-2026-07-03 09:23:57 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //input[@type='email' or @placeholder='email@example.com' or contains(@placeholder, 'email')] to be visible (Timeout: 15s)
-2026-07-03 09:23:58 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'WrongPassword123!' in element By.xpath: //input[@type='password' or @placeholder='Enter Password' or contains(@placeholder, 'Password')]
-2026-07-03 09:23:58 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //input[@type='password' or @placeholder='Enter Password' or contains(@placeholder, 'Password')] to be visible (Timeout: 15s)
-2026-07-03 09:23:58 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[contains(., 'Sign In') or contains(., 'Sign in') or contains(@class, 'Sign')] to be clickable (Timeout: 15s)
-2026-07-03 09:23:58 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[contains(., 'Sign In') or contains(., 'Sign in') or contains(@class, 'Sign')]
-2026-07-03 09:23:58 [main] INFO  com.automation.utils.ReportUtils - Verifying error message is displayed on login page...
-2026-07-03 09:23:58 [main] INFO  com.automation.utils.ElementUtils - Checking visibility of element By.xpath: //div[contains(@class, 'error') or contains(@class, 'alert')] | //*[contains(text(), 'Invalid') or contains(text(), 'invalid') or contains(text(), 'failed') or contains(text(), 'incorrect') or contains(text(), 'user id')]
-2026-07-03 09:23:58 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //div[contains(@class, 'error') or contains(@class, 'alert')] | //*[contains(text(), 'Invalid') or contains(text(), 'invalid') or contains(text(), 'failed') or contains(text(), 'incorrect') or contains(text(), 'user id')] to be visible (Timeout: 15s)
-2026-07-03 09:23:59 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //div[contains(@class, 'error') or contains(@class, 'alert')] | //*[contains(text(), 'Invalid') or contains(text(), 'invalid') or contains(text(), 'failed') or contains(text(), 'incorrect') or contains(text(), 'user id')] to be visible (Timeout: 15s)
-2026-07-03 09:23:59 [main] INFO  com.automation.utils.ElementUtils - Retrieved text 'Invalid user id.' from element By.xpath: //div[contains(@class, 'error') or contains(@class, 'alert')] | //*[contains(text(), 'Invalid') or contains(text(), 'invalid') or contains(text(), 'failed') or contains(text(), 'incorrect') or contains(text(), 'user id')]
-2026-07-03 09:23:59 [main] INFO  com.automation.utils.ReportUtils - Actual error message displayed: 'Invalid user id.'
-2026-07-03 09:23:59 [main] INFO  com.automation.utils.ReportUtils - [PASS] Negative login test passed. Login failed as expected, and error message was correctly displayed: 'Invalid user id.'
-2026-07-03 09:23:59 [main] INFO  com.automation.tests.BaseTest - Test passed: testFailedLoginWithInvalidCredentials
-2026-07-03 09:23:59 [main] INFO  com.automation.utils.ReportUtils - [PASS] Test execution completed successfully.
-2026-07-03 09:23:59 [main] INFO  com.automation.tests.BaseTest - Closing browser session...
-2026-07-03 09:23:59 [main] INFO  com.automation.utils.ReportUtils - Started report test: 'testSuccessfulOnboarding'
-2026-07-03 09:23:59 [main] INFO  com.automation.tests.BaseTest - Initializing browser: chrome
-2026-07-03 09:24:01 [main] INFO  com.automation.tests.BaseTest - Navigating to URL: http://mumbai.staging-provider-passport.s3-website.ap-south-1.amazonaws.com/#/auth/login
-2026-07-03 09:24:08 [main] INFO  com.automation.utils.ReportUtils - Logging in with user: alokbind4733@gmail.com
-2026-07-03 09:24:08 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[contains(., 'Password')] | //span[contains(text(), 'Password')] | //*[text()='Password'] to be clickable (Timeout: 15s)
-2026-07-03 09:24:09 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[contains(., 'Password')] | //span[contains(text(), 'Password')] | //*[text()='Password']
-2026-07-03 09:24:09 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'alokbind4733@gmail.com' in element By.xpath: //input[@type='email' or @placeholder='email@example.com' or contains(@placeholder, 'email')]
-2026-07-03 09:24:09 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //input[@type='email' or @placeholder='email@example.com' or contains(@placeholder, 'email')] to be visible (Timeout: 15s)
-2026-07-03 09:24:09 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'Test@Krenai' in element By.xpath: //input[@type='password' or @placeholder='Enter Password' or contains(@placeholder, 'Password')]
-2026-07-03 09:24:09 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //input[@type='password' or @placeholder='Enter Password' or contains(@placeholder, 'Password')] to be visible (Timeout: 15s)
-2026-07-03 09:24:10 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[contains(., 'Sign In') or contains(., 'Sign in') or contains(@class, 'Sign')] to be clickable (Timeout: 15s)
-2026-07-03 09:24:10 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[contains(., 'Sign In') or contains(., 'Sign in') or contains(@class, 'Sign')]
-2026-07-03 09:24:10 [main] INFO  com.automation.utils.ReportUtils - Verifying successful login...
-2026-07-03 09:24:10 [main] INFO  com.automation.utils.ElementUtils - Checking visibility of element By.xpath: //*[text()='Tasks to do'] | //*[text()='Provider Overview'] | //*[contains(text(), 'Alok Bind')]
-2026-07-03 09:24:10 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //*[text()='Tasks to do'] | //*[text()='Provider Overview'] | //*[contains(text(), 'Alok Bind')] to be visible (Timeout: 15s)
-2026-07-03 09:24:14 [main] INFO  com.automation.utils.ReportUtils - [PASS] Successfully logged in and reached the Dashboard.
-2026-07-03 09:24:14 [main] INFO  com.automation.utils.ReportUtils - Navigating to Staff -> Providers...
-2026-07-03 09:24:14 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //*[contains(text(), 'Staff')] to be clickable (Timeout: 15s)
-2026-07-03 09:24:14 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //*[contains(text(), 'Providers')] to be clickable (Timeout: 15s)
-2026-07-03 09:24:14 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //*[contains(text(), 'Providers')]
-2026-07-03 09:24:15 [main] INFO  com.automation.utils.ElementUtils - Checking visibility of element By.xpath: //*[contains(text(), 'Active Providers')]
-2026-07-03 09:24:15 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //*[contains(text(), 'Active Providers')] to be visible (Timeout: 15s)
-2026-07-03 09:24:20 [main] INFO  com.automation.utils.ReportUtils - [PASS] Navigated to Providers page.
-2026-07-03 09:24:20 [main] INFO  com.automation.pages.ProvidersPage - Checking if provider with NPI 1780658039 is in In Process list...
-2026-07-03 09:24:20 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: nav-process-tab to be clickable (Timeout: 5s)
-2026-07-03 09:24:20 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.id: nav-process-tab
-2026-07-03 09:24:22 [main] INFO  com.automation.pages.ProvidersPage - Found 5 total rows in In Process table
-2026-07-03 09:24:22 [main] INFO  com.automation.pages.ProvidersPage - Row 0: 
-2026-07-03 09:24:22 [main] INFO  com.automation.pages.ProvidersPage - Row 1: Provider Name | Title | NPI Number | Phone | Provider Email | Processed Date | Processed By | Onboarding Workflow | Actions
-2026-07-03 09:24:22 [main] INFO  com.automation.pages.ProvidersPage - Row 2: Alexandre Aalam | -- | 1780658039 | (555)-418-2811 | auto_prov_20040@gmail.com | 07-02-2026 | Alok Bind | Complete_test_onboarding_workflow
-2026-07-03 09:24:22 [main] INFO  com.automation.pages.ProvidersPage - Row 3: 
-2026-07-03 09:24:22 [main] INFO  com.automation.pages.ProvidersPage - Row 4: 
-2026-07-03 09:24:22 [main] INFO  com.automation.pages.ProvidersPage - Provider with NPI 1780658039 found in In Process list. Deleting...
-2026-07-03 09:24:22 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //tr[td[contains(., '1780658039')]]//a[p[@mattooltip='Delete Provider']] | //tr[td[contains(., '1780658039')]]//img[contains(@src, 'Delete') or contains(@src, 'delete')]/parent::a | //tr[contains(., '1780658039')]//a[contains(., 'Delete') or .//img[contains(@src, 'delete')]] to be clickable (Timeout: 15s)
-2026-07-03 09:24:22 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //tr[td[contains(., '1780658039')]]//a[p[@mattooltip='Delete Provider']] | //tr[td[contains(., '1780658039')]]//img[contains(@src, 'Delete') or contains(@src, 'delete')]/parent::a | //tr[contains(., '1780658039')]//a[contains(., 'Delete') or .//img[contains(@src, 'delete')]]
-2026-07-03 09:24:24 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //div[@id='deleteModel']//button[contains(@class, 'btnmarkdelete')] | //button[contains(@class, 'btnmarkdelete')] to be clickable (Timeout: 15s)
-2026-07-03 09:24:24 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //div[@id='deleteModel']//button[contains(@class, 'btnmarkdelete')] | //button[contains(@class, 'btnmarkdelete')]
-2026-07-03 09:24:24 [main] INFO  com.automation.pages.ProvidersPage - Delete confirmation clicked.
-2026-07-03 09:24:27 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[contains(., 'Active Providers')] | //button[contains(text(), 'Active')] to be clickable (Timeout: 5s)
-2026-07-03 09:24:27 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[contains(., 'Active Providers')] | //button[contains(text(), 'Active')]
-2026-07-03 09:24:28 [main] INFO  com.automation.utils.ReportUtils - Selecting location: Dark Knight Oso Inc
-2026-07-03 09:24:28 [main] INFO  com.automation.utils.ElementUtils - Opening dropdown By.xpath: //*[contains(text(), 'Locations') or contains(text(), 'Knight') or contains(text(), 'Oso')] and selecting option containing 'Dark Knight Oso Inc'
-2026-07-03 09:24:28 [main] INFO  com.automation.utils.ElementUtils - Found 4 potential dropdown trigger elements matching By.xpath: //*[contains(text(), 'Locations') or contains(text(), 'Knight') or contains(text(), 'Oso')]
-2026-07-03 09:24:29 [main] INFO  com.automation.utils.ElementUtils - Trigger [0]: Tag='span', Text='All Locations', Class='LctnSelection', Displayed=true
-2026-07-03 09:24:29 [main] INFO  com.automation.utils.ElementUtils - Trigger [1]: Tag='h1', Text='', Class='modal-title', Displayed=false
-2026-07-03 09:24:29 [main] INFO  com.automation.utils.ElementUtils - Trigger [2]: Tag='button', Text='', Class='invite-btn active', Displayed=false
-2026-07-03 09:24:29 [main] INFO  com.automation.utils.ElementUtils - Trigger [3]: Tag='button', Text='', Class='invite-btn', Displayed=false
-2026-07-03 09:24:29 [main] INFO  com.automation.utils.ElementUtils - Attempt 1 to click dropdown trigger...
-2026-07-03 09:24:29 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //*[contains(text(), 'Locations') or contains(text(), 'Knight') or contains(text(), 'Oso')] to be clickable (Timeout: 5s)
-2026-07-03 09:24:29 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //*[contains(text(), 'Locations') or contains(text(), 'Knight') or contains(text(), 'Oso')]
-2026-07-03 09:24:30 [main] INFO  com.automation.utils.ElementUtils - Dropdown opened successfully. Option is now visible.
-2026-07-03 09:24:30 [main] INFO  com.automation.utils.ElementUtils - Found 1 option elements matching By.xpath: //*[contains(text(), 'Dark Knight Oso Inc')] (Attempt 1)
-2026-07-03 09:24:30 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Dark Knight Oso Inc', Displayed=true
-2026-07-03 09:24:30 [main] INFO  com.automation.utils.ElementUtils - Clicking option containing 'Dark Knight Oso Inc'
-2026-07-03 09:24:30 [main] INFO  com.automation.pages.ProvidersPage - Waiting for location dropdown trigger text to update to 'Dark Knight Oso Inc'...
-2026-07-03 09:24:30 [main] INFO  com.automation.pages.ProvidersPage - Location successfully selected and trigger text updated.
-2026-07-03 09:24:30 [main] INFO  com.automation.utils.ReportUtils - [PASS] Location selected successfully.
-2026-07-03 09:24:30 [main] INFO  com.automation.utils.ReportUtils - Clicking + Add Provider...
-2026-07-03 09:24:30 [main] INFO  com.automation.pages.ProvidersPage - Attempt 1 to click + Add Provider button...
-2026-07-03 09:24:30 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[contains(., 'Add Provider')] | //span[contains(text(), 'Add Provider')] | //*[contains(text(), 'Add Provider') and contains(@class, 'button')] to be clickable (Timeout: 5s)
-2026-07-03 09:24:30 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[contains(., 'Add Provider')] | //span[contains(text(), 'Add Provider')] | //*[contains(text(), 'Add Provider') and contains(@class, 'button')]
-2026-07-03 09:24:33 [main] WARN  com.automation.pages.ProvidersPage - Modal did not open on attempt 1. Retrying click...
-2026-07-03 09:24:33 [main] INFO  com.automation.pages.ProvidersPage - Attempt 2 to click + Add Provider button...
-2026-07-03 09:24:33 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[contains(., 'Add Provider')] | //span[contains(text(), 'Add Provider')] | //*[contains(text(), 'Add Provider') and contains(@class, 'button')] to be clickable (Timeout: 5s)
-2026-07-03 09:24:33 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[contains(., 'Add Provider')] | //span[contains(text(), 'Add Provider')] | //*[contains(text(), 'Add Provider') and contains(@class, 'button')]
-2026-07-03 09:24:35 [main] INFO  com.automation.pages.ProvidersPage - Add Provider modal opened successfully.
-2026-07-03 09:24:35 [main] INFO  com.automation.utils.ReportUtils - Selecting onboarding workflow: Complete_Test_Onboarding_Workflow
-2026-07-03 09:24:35 [main] INFO  com.automation.utils.ElementUtils - Opening dropdown By.xpath: //*[contains(text(), 'Select Onboarding Workflow')]/following::div[@class='selected-list'][1] | //div[@class='selected-list'] and selecting option containing 'Complete_Test_Onboarding_Workflow'
-2026-07-03 09:24:35 [main] INFO  com.automation.utils.ElementUtils - Found 2 potential dropdown trigger elements matching By.xpath: //*[contains(text(), 'Select Onboarding Workflow')]/following::div[@class='selected-list'][1] | //div[@class='selected-list']
-2026-07-03 09:24:35 [main] INFO  com.automation.utils.ElementUtils - Trigger [0]: Tag='div', Text='test flow F', Class='selected-list', Displayed=true
-2026-07-03 09:24:35 [main] INFO  com.automation.utils.ElementUtils - Trigger [1]: Tag='div', Text='', Class='selected-list', Displayed=false
-2026-07-03 09:24:35 [main] INFO  com.automation.utils.ElementUtils - Attempt 1 to click dropdown trigger...
-2026-07-03 09:24:35 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //*[contains(text(), 'Select Onboarding Workflow')]/following::div[@class='selected-list'][1] | //div[@class='selected-list'] to be clickable (Timeout: 5s)
-2026-07-03 09:24:35 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //*[contains(text(), 'Select Onboarding Workflow')]/following::div[@class='selected-list'][1] | //div[@class='selected-list']
-2026-07-03 09:24:35 [main] INFO  com.automation.utils.ElementUtils - Dropdown opened successfully. Option is now visible.
-2026-07-03 09:24:35 [main] INFO  com.automation.utils.ElementUtils - Found 1 option elements matching By.xpath: //*[contains(text(), 'Complete_Test_Onboarding_Workflow')] (Attempt 1)
-2026-07-03 09:24:35 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Complete_Test_Onboarding_Workflow', Displayed=true
-2026-07-03 09:24:35 [main] INFO  com.automation.utils.ElementUtils - Clicking option containing 'Complete_Test_Onboarding_Workflow'
-2026-07-03 09:24:36 [main] INFO  com.automation.pages.AddProviderModal - Clicking workflow dropdown trigger again to close the overlay options list...
-2026-07-03 09:24:36 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //*[contains(text(), 'Select Onboarding Workflow')]/following::div[@class='selected-list'][1] | //div[@class='selected-list'] to be clickable (Timeout: 5s)
-2026-07-03 09:24:36 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //*[contains(text(), 'Select Onboarding Workflow')]/following::div[@class='selected-list'][1] | //div[@class='selected-list']
-2026-07-03 09:24:36 [main] INFO  com.automation.utils.ReportUtils - Selecting 'Add Provider' option...
-2026-07-03 09:24:36 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //div[contains(@class, 'modal')]//*[text()='Add Provider']/parent::div | //div[contains(@class, 'modal')]//*[text()='Add Provider'] | //div[contains(@class, 'modal')]//p[text()='Add Provider'] to be visible (Timeout: 15s)
-2026-07-03 09:24:36 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //div[contains(@class, 'modal')]//*[text()='Add Provider']/parent::div | //div[contains(@class, 'modal')]//*[text()='Add Provider'] | //div[contains(@class, 'modal')]//p[text()='Add Provider'] using JavaScript
-2026-07-03 09:24:36 [main] INFO  com.automation.utils.ReportUtils - Clicking Next...
-2026-07-03 09:24:36 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[contains(., 'Next')] | //span[contains(text(), 'Next')] | //button[contains(text(), 'Next')] to be clickable (Timeout: 15s)
-2026-07-03 09:24:36 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[contains(., 'Next')] | //span[contains(text(), 'Next')] | //button[contains(text(), 'Next')]
-2026-07-03 09:24:36 [main] INFO  com.automation.utils.ReportUtils - [PASS] Successfully configured workflow and moved to details step.
-2026-07-03 09:24:36 [main] INFO  com.automation.utils.ReportUtils - Selecting first privilege option...
-2026-07-03 09:24:36 [main] INFO  com.automation.pages.AddProviderModal - Opening Privileges dropdown and selecting option containing 'Allergy'...
-2026-07-03 09:24:36 [main] INFO  com.automation.pages.AddProviderModal - Attempt 1 to click privileges dropdown...
-2026-07-03 09:24:36 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //*[contains(text(), 'Privileges') or contains(text(), 'privilege')]/following::div[contains(@class, 'selected-list')][1] to be clickable (Timeout: 5s)
-2026-07-03 09:24:36 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //*[contains(text(), 'Privileges') or contains(text(), 'privilege')]/following::div[contains(@class, 'selected-list')][1]
-2026-07-03 09:24:40 [main] WARN  com.automation.pages.AddProviderModal - Target option not visible after click attempt 1. Retrying click...
-2026-07-03 09:24:40 [main] INFO  com.automation.pages.AddProviderModal - Attempt 2 to click privileges dropdown...
-2026-07-03 09:24:40 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //*[contains(text(), 'Privileges') or contains(text(), 'privilege')]/following::div[contains(@class, 'selected-list')][1] to be clickable (Timeout: 5s)
-2026-07-03 09:24:40 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //*[contains(text(), 'Privileges') or contains(text(), 'privilege')]/following::div[contains(@class, 'selected-list')][1]
-2026-07-03 09:24:41 [main] INFO  com.automation.pages.AddProviderModal - Privileges dropdown opened and target option is visible.
-2026-07-03 09:24:41 [main] INFO  com.automation.pages.AddProviderModal - Selecting option containing 'Allergy': 'Allergy/Immunology Clinical Privileges'
-2026-07-03 09:24:41 [main] INFO  com.automation.pages.AddProviderModal - Clicking privileges dropdown trigger again to close the overlay options list...
-2026-07-03 09:24:41 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //*[contains(text(), 'Privileges') or contains(text(), 'privilege')]/following::div[contains(@class, 'selected-list')][1] to be clickable (Timeout: 5s)
-2026-07-03 09:24:41 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //*[contains(text(), 'Privileges') or contains(text(), 'privilege')]/following::div[contains(@class, 'selected-list')][1]
-2026-07-03 09:24:41 [main] INFO  com.automation.pages.AddProviderModal - Privileges dropdown overlay closed successfully.
-2026-07-03 09:24:41 [main] INFO  com.automation.utils.ReportUtils - Entering Provider Details. NPI: 1780658039, First Name: AutoFn88383, Last Name: AutoLn88383
-2026-07-03 09:24:41 [main] INFO  com.automation.pages.AddProviderModal - Typing NPI: 1780658039
-2026-07-03 09:24:42 [main] INFO  com.automation.pages.AddProviderModal - Successfully typed '1780658039' in visible element By.xpath: //input[@name='npi' or contains(@placeholder, 'NPI') or @id='npi' or contains(@name, 'npi')]
-2026-07-03 09:24:42 [main] INFO  com.automation.pages.AddProviderModal - Waiting for NPPES auto-fill lookup to populate names...
-2026-07-03 09:24:44 [main] INFO  com.automation.pages.AddProviderModal - NPPES auto-fill lookup detected. First Name: 'Alexandre'
-2026-07-03 09:24:44 [main] INFO  com.automation.pages.AddProviderModal - Syncing React/Angular state for auto-filled names: 'Alexandre', 'Aalam'
-2026-07-03 09:24:45 [main] INFO  com.automation.pages.AddProviderModal - Successfully typed 'Alexandre' in visible element By.xpath: //input[@name='firstName' or contains(@placeholder, 'First Name') or @id='firstName' or contains(@name, 'first')]
-2026-07-03 09:24:45 [main] INFO  com.automation.pages.AddProviderModal - Successfully typed 'Aalam' in visible element By.xpath: //input[@name='lastName' or contains(@placeholder, 'Last Name') or @id='lastName' or contains(@name, 'last')]
-2026-07-03 09:24:45 [main] INFO  com.automation.utils.ReportUtils - Submitting Provider Onboarding request for NPI: 1780658039
-2026-07-03 09:24:45 [main] INFO  com.automation.pages.AddProviderModal - Waiting for Add button to be clickable...
-2026-07-03 09:24:45 [main] INFO  com.automation.pages.AddProviderModal - Add button is enabled, performing robust click...
-2026-07-03 09:24:45 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //div[contains(@class, 'modal') and contains(@class, 'show')]//button[text()='ADD' or contains(text(), 'ADD') or contains(., 'ADD') or contains(text(), 'Add')] to be clickable (Timeout: 15s)
-2026-07-03 09:24:45 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //div[contains(@class, 'modal') and contains(@class, 'show')]//button[text()='ADD' or contains(text(), 'ADD') or contains(., 'ADD') or contains(text(), 'Add')]
-2026-07-03 09:24:49 [main] INFO  com.automation.utils.ReportUtils - [PASS] Successfully submitted onboarding request with NPI: 1780658039
-2026-07-03 09:24:49 [main] INFO  com.automation.utils.ReportUtils - Switching to the newly opened onboarding tab...
-2026-07-03 09:24:49 [main] INFO  com.automation.pages.ProviderFormPage - Waiting for new tab to open...
-2026-07-03 09:24:49 [main] INFO  com.automation.pages.ProviderFormPage - Switched to new tab. Title: 'Provider Passport', URL: 'http://mumbai.staging-provider-passport.s3-website.ap-south-1.amazonaws.com/#/provider-onboarding/personal-information?type=License&workflow=306&providerNpi=1780658039'
-2026-07-03 09:24:49 [main] INFO  com.automation.utils.ElementUtils - Checking visibility of element By.xpath: //input[contains(@placeholder, 'SSN') or @name='ssn' or contains(@id, 'ssn')]
-2026-07-03 09:24:49 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //input[contains(@placeholder, 'SSN') or @name='ssn' or contains(@id, 'ssn')] to be visible (Timeout: 15s)
-2026-07-03 09:24:49 [main] INFO  com.automation.utils.ReportUtils - [PASS] Successfully switched to the Provider Form Page.
-2026-07-03 09:24:49 [main] INFO  com.automation.utils.ReportUtils - Filling out Provider Form Details. SSN: 999003707, Email: auto_prov_18756@gmail.com, DOB: 01011990, Phone: 5558345081, Gender: Male, Certifying Board: Academy of Lactation
-2026-07-03 09:24:49 [main] INFO  com.automation.pages.onboarding.PersonalInformationPage - Filling Basic Information form: SSN='999003707', Email='auto_prov_18756@gmail.com', DOB='01011990', Phone='5558345081', Gender='Male'
-2026-07-03 09:24:49 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing '999003707' in element By.xpath: //input[contains(@placeholder, 'SSN') or @name='ssn' or contains(@id, 'ssn')]
-2026-07-03 09:24:49 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //input[contains(@placeholder, 'SSN') or @name='ssn' or contains(@id, 'ssn')] to be visible (Timeout: 15s)
-2026-07-03 09:24:49 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'auto_prov_18756@gmail.com' in element By.xpath: //input[contains(@placeholder, 'Email Address') or @name='email' or @placeholder='Enter Email Address']
-2026-07-03 09:24:49 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //input[contains(@placeholder, 'Email Address') or @name='email' or @placeholder='Enter Email Address'] to be visible (Timeout: 15s)
-2026-07-03 09:24:50 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing '01011990' in element By.xpath: //input[contains(@placeholder, 'MM') or contains(@placeholder, 'DD') or @placeholder='MM / DD / YYYY' or @type='date']
-2026-07-03 09:24:50 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //input[contains(@placeholder, 'MM') or contains(@placeholder, 'DD') or @placeholder='MM / DD / YYYY' or @type='date'] to be visible (Timeout: 15s)
-2026-07-03 09:24:50 [main] INFO  com.automation.utils.ElementUtils - Setting date value via JS: 1990-01-01
-2026-07-03 09:24:50 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing '5558345081' in element By.xpath: //input[@name='phone' or contains(@placeholder, 'Phone Number')]
-2026-07-03 09:24:50 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //input[@name='phone' or contains(@placeholder, 'Phone Number')] to be visible (Timeout: 15s)
-2026-07-03 09:24:51 [main] INFO  com.automation.pages.onboarding.PersonalInformationPage - Selecting Gender: Male
-2026-07-03 09:24:51 [main] INFO  com.automation.utils.ElementUtils - Dropdown By.id: genderSelectBox is already selected with 'Male'. Skipping selection.
-2026-07-03 09:24:51 [main] INFO  com.automation.pages.onboarding.PersonalInformationPage - Scrolling page to the bottom...
-2026-07-03 09:24:52 [main] INFO  com.automation.pages.onboarding.PersonalInformationPage - Found 1 board certified Yes radio labels
-2026-07-03 09:24:52 [main] INFO  com.automation.pages.onboarding.PersonalInformationPage - Selecting Board Certified: Yes for taxonomy index 0
-2026-07-03 09:24:54 [main] INFO  com.automation.pages.onboarding.PersonalInformationPage - Selecting Certifying Board for taxonomy index 0: Academy of Lactation
-2026-07-03 09:24:54 [main] INFO  com.automation.utils.ElementUtils - Opening dropdown By.id: boardNameSelectBox0 and selecting option containing 'Academy of Lactation'
-2026-07-03 09:24:54 [main] INFO  com.automation.utils.ElementUtils - Found 1 potential dropdown trigger elements matching By.id: boardNameSelectBox0
-2026-07-03 09:24:54 [main] INFO  com.automation.utils.ElementUtils - Trigger [0]: Tag='angular2-multiselect', Text='American Board of Periodontology', Class='onboarding_select hide-overflow-data ng-untouched ng-pristine ng-valid', Displayed=true
-2026-07-03 09:24:54 [main] INFO  com.automation.utils.ElementUtils - Attempt 1 to click dropdown trigger...
-2026-07-03 09:24:54 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: boardNameSelectBox0 to be clickable (Timeout: 5s)
-2026-07-03 09:24:54 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.id: boardNameSelectBox0
-2026-07-03 09:24:54 [main] INFO  com.automation.utils.ElementUtils - Dropdown opened successfully. Option is now visible.
-2026-07-03 09:24:55 [main] INFO  com.automation.utils.ElementUtils - Found 15 option elements matching By.xpath: //angular2-multiselect[@id='boardNameSelectBox0']//li (Attempt 1)
-2026-07-03 09:24:55 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Academy of Lactation Policy and Practice Certification', Displayed=true
-2026-07-03 09:24:55 [main] INFO  com.automation.utils.ElementUtils - Clicking option containing 'Academy of Lactation'
-2026-07-03 09:24:55 [main] INFO  com.automation.pages.onboarding.PersonalInformationPage - Found 1 taxonomy state dropdowns
-2026-07-03 09:24:55 [main] INFO  com.automation.pages.onboarding.PersonalInformationPage - Taxonomy state index 0 text: 'Arizona'
-2026-07-03 09:24:55 [main] INFO  com.automation.utils.ReportUtils - Clicking Save & Next...
-2026-07-03 09:24:55 [main] INFO  com.automation.pages.onboarding.PersonalInformationPage - Clicking Save & Next button...
-2026-07-03 09:24:55 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[contains(., 'Save & Next') or contains(text(), 'Save & Next')] to be clickable (Timeout: 15s)
-2026-07-03 09:24:55 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[contains(., 'Save & Next') or contains(text(), 'Save & Next')]
-2026-07-03 09:24:56 [main] INFO  com.automation.utils.ReportUtils - Waiting for Additional Basic Information page to load...
-2026-07-03 09:24:58 [main] INFO  com.automation.utils.ReportUtils - Saved page source for Additional Basic Information page to target/additional_basic_info.html
-2026-07-03 09:24:58 [main] INFO  com.automation.utils.ReportUtils - Filling Additional Basic Information form details: Street='123 Main St', State='California', City='Los Angeles', Zip='90001'
-2026-07-03 09:24:58 [main] INFO  com.automation.pages.onboarding.AdditionalBasicInfoPage - Filling Additional Basic Information: Street1='123 Main St', State='California', City='Los Angeles', Zip='90001'
-2026-07-03 09:24:58 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing '123 Main St' in element By.id: homeline1
-2026-07-03 09:24:58 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: homeline1 to be visible (Timeout: 15s)
-2026-07-03 09:25:00 [main] INFO  com.automation.pages.onboarding.AdditionalBasicInfoPage - Selecting State: California
-2026-07-03 09:25:00 [main] INFO  com.automation.utils.ElementUtils - Opening dropdown By.xpath: //angular2-multiselect[@name='updateStateName'] and selecting option containing 'California'
-2026-07-03 09:25:00 [main] INFO  com.automation.utils.ElementUtils - Found 1 potential dropdown trigger elements matching By.xpath: //angular2-multiselect[@name='updateStateName']
-2026-07-03 09:25:00 [main] INFO  com.automation.utils.ElementUtils - Trigger [0]: Tag='angular2-multiselect', Text='Select State', Class='ng-untouched ng-pristine ng-invalid', Displayed=true
-2026-07-03 09:25:00 [main] INFO  com.automation.utils.ElementUtils - Attempt 1 to click dropdown trigger...
-2026-07-03 09:25:00 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //angular2-multiselect[@name='updateStateName'] to be clickable (Timeout: 5s)
-2026-07-03 09:25:00 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //angular2-multiselect[@name='updateStateName']
-2026-07-03 09:25:00 [main] INFO  com.automation.utils.ElementUtils - Dropdown opened successfully. Option is now visible.
-2026-07-03 09:25:01 [main] INFO  com.automation.utils.ElementUtils - Found 62 option elements matching By.xpath: //angular2-multiselect[@name='updateStateName']//li (Attempt 1)
-2026-07-03 09:25:01 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='National', Displayed=true
-2026-07-03 09:25:01 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alabama', Displayed=true
-2026-07-03 09:25:01 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alaska', Displayed=true
-2026-07-03 09:25:01 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='American Samoa', Displayed=true
-2026-07-03 09:25:01 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arizona', Displayed=true
-2026-07-03 09:25:02 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arkansas', Displayed=true
-2026-07-03 09:25:02 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='California', Displayed=true
-2026-07-03 09:25:02 [main] INFO  com.automation.utils.ElementUtils - Clicking option containing 'California'
-2026-07-03 09:25:03 [main] INFO  com.automation.pages.onboarding.AdditionalBasicInfoPage - Selecting City: Los Angeles
-2026-07-03 09:25:03 [main] INFO  com.automation.utils.ElementUtils - Opening dropdown By.xpath: //angular2-multiselect[@name='cityNameSelect'] and selecting option containing 'Los Angeles'
-2026-07-03 09:25:03 [main] INFO  com.automation.utils.ElementUtils - Found 1 potential dropdown trigger elements matching By.xpath: //angular2-multiselect[@name='cityNameSelect']
-2026-07-03 09:25:04 [main] INFO  com.automation.utils.ElementUtils - Trigger [0]: Tag='angular2-multiselect', Text='Select City Name', Class='ng-untouched ng-pristine ng-valid', Displayed=true
-2026-07-03 09:25:04 [main] INFO  com.automation.utils.ElementUtils - Attempt 1 to click dropdown trigger...
-2026-07-03 09:25:04 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //angular2-multiselect[@name='cityNameSelect'] to be clickable (Timeout: 5s)
-2026-07-03 09:25:04 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //angular2-multiselect[@name='cityNameSelect']
-2026-07-03 09:25:04 [main] INFO  com.automation.utils.ElementUtils - Dropdown opened successfully. Option is now visible.
-2026-07-03 09:25:12 [main] INFO  com.automation.utils.ElementUtils - Found 556 option elements matching By.xpath: //angular2-multiselect[@name='cityNameSelect']//li (Attempt 1)
-2026-07-03 09:25:12 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Adelanto', Displayed=true
-2026-07-03 09:25:12 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Agoura Hills', Displayed=true
-2026-07-03 09:25:12 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alameda', Displayed=true
-2026-07-03 09:25:12 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alamo', Displayed=true
-2026-07-03 09:25:12 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Albany', Displayed=true
-2026-07-03 09:25:12 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alhambra', Displayed=true
-2026-07-03 09:25:12 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Aliso Viejo', Displayed=true
-2026-07-03 09:25:12 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alondra Park', Displayed=true
-2026-07-03 09:25:12 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alpine', Displayed=true
-2026-07-03 09:25:12 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alta Sierra', Displayed=true
-2026-07-03 09:25:12 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Altadena', Displayed=true
-2026-07-03 09:25:12 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alum Rock', Displayed=true
-2026-07-03 09:25:12 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='American Canyon', Displayed=true
-2026-07-03 09:25:12 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Anaheim', Displayed=true
-2026-07-03 09:25:12 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Anderson', Displayed=true
-2026-07-03 09:25:12 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Antioch', Displayed=true
-2026-07-03 09:25:12 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Apple Valley', Displayed=true
-2026-07-03 09:25:12 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Aptos', Displayed=true
-2026-07-03 09:25:12 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arcadia', Displayed=true
-2026-07-03 09:25:13 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arcata', Displayed=true
-2026-07-03 09:25:13 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arden-Arcade', Displayed=true
-2026-07-03 09:25:13 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arroyo Grande', Displayed=true
-2026-07-03 09:25:13 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Artesia', Displayed=true
-2026-07-03 09:25:13 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arvin', Displayed=true
-2026-07-03 09:25:13 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Ashland', Displayed=true
-2026-07-03 09:25:13 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Atascadero', Displayed=true
-2026-07-03 09:25:13 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Atherton', Displayed=true
-2026-07-03 09:25:13 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Atwater', Displayed=true
-2026-07-03 09:25:13 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Auburn', Displayed=true
-2026-07-03 09:25:13 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='August', Displayed=true
-2026-07-03 09:25:13 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Avenal', Displayed=true
-2026-07-03 09:25:13 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Avocado Heights', Displayed=true
-2026-07-03 09:25:14 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Azusa', Displayed=true
-2026-07-03 09:25:14 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bakersfield', Displayed=true
-2026-07-03 09:25:14 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Baldwin Park', Displayed=true
-2026-07-03 09:25:14 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Banning', Displayed=true
-2026-07-03 09:25:14 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Barstow', Displayed=true
-2026-07-03 09:25:14 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bay Point', Displayed=true
-2026-07-03 09:25:14 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Baywood-Los Osos', Displayed=true
-2026-07-03 09:25:14 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Beaumont', Displayed=true
-2026-07-03 09:25:14 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bell', Displayed=true
-2026-07-03 09:25:14 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bell Gardens', Displayed=true
-2026-07-03 09:25:14 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bellflower', Displayed=true
-2026-07-03 09:25:14 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Belmont', Displayed=true
-2026-07-03 09:25:14 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Benicia', Displayed=true
-2026-07-03 09:25:14 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Berkeley', Displayed=true
-2026-07-03 09:25:14 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bermuda Dunes', Displayed=true
-2026-07-03 09:25:14 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Beverly Hills', Displayed=true
-2026-07-03 09:25:14 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Blackhawk-Camino Tassajara', Displayed=true
-2026-07-03 09:25:14 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bloomington', Displayed=true
-2026-07-03 09:25:14 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Blythe', Displayed=true
-2026-07-03 09:25:14 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bonadelle Ranchos-Madera Ranchos', Displayed=true
-2026-07-03 09:25:14 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bonita', Displayed=true
-2026-07-03 09:25:14 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bostonia', Displayed=true
-2026-07-03 09:25:14 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Boyes Hot Springs', Displayed=true
-2026-07-03 09:25:15 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Brawley', Displayed=true
-2026-07-03 09:25:15 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Brea', Displayed=true
-2026-07-03 09:25:15 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Brentwood', Displayed=true
-2026-07-03 09:25:15 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Buena Park', Displayed=true
-2026-07-03 09:25:15 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Burbank', Displayed=true
-2026-07-03 09:25:15 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Burlingame', Displayed=true
-2026-07-03 09:25:15 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Calabasas', Displayed=true
-2026-07-03 09:25:15 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Calexico', Displayed=true
-2026-07-03 09:25:15 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='California City', Displayed=true
-2026-07-03 09:25:15 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Calimesa', Displayed=true
-2026-07-03 09:25:15 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Calipatria', Displayed=true
-2026-07-03 09:25:15 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Camarillo', Displayed=true
-2026-07-03 09:25:15 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cambria', Displayed=true
-2026-07-03 09:25:15 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cameron Park', Displayed=true
-2026-07-03 09:25:15 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Camp Pendleton North', Displayed=true
-2026-07-03 09:25:15 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Camp Pendleton South', Displayed=true
-2026-07-03 09:25:15 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Campbell', Displayed=true
-2026-07-03 09:25:15 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Canyon Lake', Displayed=true
-2026-07-03 09:25:15 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Capitola', Displayed=true
-2026-07-03 09:25:15 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Carlsbad', Displayed=true
-2026-07-03 09:25:15 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Carmichael', Displayed=true
-2026-07-03 09:25:15 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Carpinteria', Displayed=true
-2026-07-03 09:25:15 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Carson', Displayed=true
-2026-07-03 09:25:15 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Casa de Oro-Mount Helix', Displayed=true
-2026-07-03 09:25:16 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Castro Valley', Displayed=true
-2026-07-03 09:25:16 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Castroville', Displayed=true
-2026-07-03 09:25:16 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cathedral City', Displayed=true
-2026-07-03 09:25:16 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Ceres', Displayed=true
-2026-07-03 09:25:16 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cerritos', Displayed=true
-2026-07-03 09:25:16 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Charter Oak', Displayed=true
-2026-07-03 09:25:16 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cherryland', Displayed=true
-2026-07-03 09:25:16 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Chico', Displayed=true
-2026-07-03 09:25:16 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Chino', Displayed=true
-2026-07-03 09:25:16 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Chino Hills', Displayed=true
-2026-07-03 09:25:16 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Chowchilla', Displayed=true
-2026-07-03 09:25:16 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Chula Vista', Displayed=true
-2026-07-03 09:25:16 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Citrus', Displayed=true
-2026-07-03 09:25:16 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Citrus Heights', Displayed=true
-2026-07-03 09:25:16 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Claremont', Displayed=true
-2026-07-03 09:25:16 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Clayton', Displayed=true
-2026-07-03 09:25:16 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Clearlake', Displayed=true
-2026-07-03 09:25:16 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cloverdale', Displayed=true
-2026-07-03 09:25:16 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Clovis', Displayed=true
-2026-07-03 09:25:16 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Coachella', Displayed=true
-2026-07-03 09:25:16 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Coalinga', Displayed=true
-2026-07-03 09:25:16 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Colton', Displayed=true
-2026-07-03 09:25:16 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Commerce', Displayed=true
-2026-07-03 09:25:17 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Compton', Displayed=true
-2026-07-03 09:25:17 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Concord', Displayed=true
-2026-07-03 09:25:17 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Corcoran', Displayed=true
-2026-07-03 09:25:17 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Corning', Displayed=true
-2026-07-03 09:25:17 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Corona', Displayed=true
-2026-07-03 09:25:17 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Coronado', Displayed=true
-2026-07-03 09:25:17 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Corte Madera', Displayed=true
-2026-07-03 09:25:17 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Costa Mesa', Displayed=true
-2026-07-03 09:25:17 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cotati', Displayed=true
-2026-07-03 09:25:17 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Coto de Caza', Displayed=true
-2026-07-03 09:25:17 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Country Club', Displayed=true
-2026-07-03 09:25:17 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Covina', Displayed=true
-2026-07-03 09:25:17 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Crestline', Displayed=true
-2026-07-03 09:25:17 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cudahy', Displayed=true
-2026-07-03 09:25:17 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Culver City', Displayed=true
-2026-07-03 09:25:17 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cupertino', Displayed=true
-2026-07-03 09:25:17 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cypress', Displayed=true
-2026-07-03 09:25:17 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Daly City', Displayed=true
-2026-07-03 09:25:17 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Dana Point', Displayed=true
-2026-07-03 09:25:17 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Danville', Displayed=true
-2026-07-03 09:25:17 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Davis', Displayed=true
-2026-07-03 09:25:17 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Del Aire', Displayed=true
-2026-07-03 09:25:17 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Delano', Displayed=true
-2026-07-03 09:25:17 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Delhi', Displayed=true
-2026-07-03 09:25:18 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Desert Hot Springs', Displayed=true
-2026-07-03 09:25:18 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Diamond Bar', Displayed=true
-2026-07-03 09:25:18 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Dinuba', Displayed=true
-2026-07-03 09:25:18 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Discovery Bay', Displayed=true
-2026-07-03 09:25:18 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Dixon', Displayed=true
-2026-07-03 09:25:18 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Downey', Displayed=true
-2026-07-03 09:25:18 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Duarte', Displayed=true
-2026-07-03 09:25:18 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Dublin', Displayed=true
-2026-07-03 09:25:18 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Earlimart', Displayed=true
-2026-07-03 09:25:18 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='East Compton', Displayed=true
-2026-07-03 09:25:18 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='East Foothills', Displayed=true
-2026-07-03 09:25:18 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='East Hemet', Displayed=true
-2026-07-03 09:25:18 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='East La Mirada', Displayed=true
-2026-07-03 09:25:18 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='East Los Angeles', Displayed=true
-2026-07-03 09:25:19 [main] INFO  com.automation.utils.ElementUtils - Clicking option containing 'Los Angeles'
-2026-07-03 09:25:19 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing '90001' in element By.xpath: //input[@name='zipcode']
-2026-07-03 09:25:19 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //input[@name='zipcode'] to be visible (Timeout: 15s)
-2026-07-03 09:25:19 [main] INFO  com.automation.pages.onboarding.AdditionalBasicInfoPage - Selecting Birth Country: United States
-2026-07-03 09:25:19 [main] INFO  com.automation.utils.ElementUtils - Opening dropdown By.id: providerCountry and selecting option containing 'United States'
-2026-07-03 09:25:19 [main] INFO  com.automation.utils.ElementUtils - Found 1 potential dropdown trigger elements matching By.id: providerCountry
-2026-07-03 09:25:19 [main] INFO  com.automation.utils.ElementUtils - Trigger [0]: Tag='angular2-multiselect', Text='Select Country', Class='onboarding_select ng-untouched ng-pristine ng-invalid', Displayed=true
-2026-07-03 09:25:19 [main] INFO  com.automation.utils.ElementUtils - Attempt 1 to click dropdown trigger...
-2026-07-03 09:25:19 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: providerCountry to be clickable (Timeout: 5s)
-2026-07-03 09:25:19 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.id: providerCountry
-2026-07-03 09:25:19 [main] INFO  com.automation.utils.ElementUtils - Dropdown opened successfully. Option is now visible.
-2026-07-03 09:25:23 [main] INFO  com.automation.utils.ElementUtils - Found 242 option elements matching By.xpath: //angular2-multiselect[@id='providerCountry']//li (Attempt 1)
-2026-07-03 09:25:23 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='United States', Displayed=true
-2026-07-03 09:25:23 [main] INFO  com.automation.utils.ElementUtils - Clicking option containing 'United States'
-2026-07-03 09:25:23 [main] INFO  com.automation.utils.ElementUtils - Checking visibility of element By.xpath: //*[contains(text(), 'Birth State')]/following::angular2-multiselect[1]
-2026-07-03 09:25:23 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //*[contains(text(), 'Birth State')]/following::angular2-multiselect[1] to be visible (Timeout: 3s)
-2026-07-03 09:25:23 [main] INFO  com.automation.pages.onboarding.AdditionalBasicInfoPage - Birth State is a dropdown. Selecting option: California
-2026-07-03 09:25:23 [main] INFO  com.automation.utils.ElementUtils - Opening dropdown By.xpath: //*[contains(text(), 'Birth State')]/following::angular2-multiselect[1] and selecting option containing 'California'
-2026-07-03 09:25:23 [main] INFO  com.automation.utils.ElementUtils - Found 1 potential dropdown trigger elements matching By.xpath: //*[contains(text(), 'Birth State')]/following::angular2-multiselect[1]
-2026-07-03 09:25:23 [main] INFO  com.automation.utils.ElementUtils - Trigger [0]: Tag='angular2-multiselect', Text='Select State', Class='ng-untouched ng-pristine ng-invalid', Displayed=true
-2026-07-03 09:25:23 [main] INFO  com.automation.utils.ElementUtils - Attempt 1 to click dropdown trigger...
-2026-07-03 09:25:23 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //*[contains(text(), 'Birth State')]/following::angular2-multiselect[1] to be clickable (Timeout: 5s)
-2026-07-03 09:25:23 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //*[contains(text(), 'Birth State')]/following::angular2-multiselect[1]
-2026-07-03 09:25:24 [main] INFO  com.automation.utils.ElementUtils - Dropdown opened successfully. Option is now visible.
-2026-07-03 09:25:25 [main] INFO  com.automation.utils.ElementUtils - Found 62 option elements matching By.xpath: //*[contains(text(), 'Birth State')]/following::angular2-multiselect[1]//li (Attempt 1)
-2026-07-03 09:25:25 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='National', Displayed=true
-2026-07-03 09:25:25 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alabama', Displayed=true
-2026-07-03 09:25:25 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alaska', Displayed=true
-2026-07-03 09:25:25 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='American Samoa', Displayed=true
-2026-07-03 09:25:25 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arizona', Displayed=true
-2026-07-03 09:25:25 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arkansas', Displayed=true
-2026-07-03 09:25:25 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='California', Displayed=true
-2026-07-03 09:25:25 [main] INFO  com.automation.utils.ElementUtils - Clicking option containing 'California'
-2026-07-03 09:25:25 [main] INFO  com.automation.utils.ElementUtils - Checking visibility of element By.xpath: //*[contains(text(), 'Birth City')]/following::angular2-multiselect[1]
-2026-07-03 09:25:25 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //*[contains(text(), 'Birth City')]/following::angular2-multiselect[1] to be visible (Timeout: 3s)
-2026-07-03 09:25:25 [main] INFO  com.automation.pages.onboarding.AdditionalBasicInfoPage - Birth City is a dropdown. Selecting option: Los Angeles
-2026-07-03 09:25:25 [main] INFO  com.automation.utils.ElementUtils - Opening dropdown By.xpath: //*[contains(text(), 'Birth City')]/following::angular2-multiselect[1] and selecting option containing 'Los Angeles'
-2026-07-03 09:25:25 [main] INFO  com.automation.utils.ElementUtils - Found 1 potential dropdown trigger elements matching By.xpath: //*[contains(text(), 'Birth City')]/following::angular2-multiselect[1]
-2026-07-03 09:25:25 [main] INFO  com.automation.utils.ElementUtils - Trigger [0]: Tag='angular2-multiselect', Text='Select City Name', Class='ng-untouched ng-pristine ng-valid', Displayed=true
-2026-07-03 09:25:25 [main] INFO  com.automation.utils.ElementUtils - Attempt 1 to click dropdown trigger...
-2026-07-03 09:25:25 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //*[contains(text(), 'Birth City')]/following::angular2-multiselect[1] to be clickable (Timeout: 5s)
-2026-07-03 09:25:25 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //*[contains(text(), 'Birth City')]/following::angular2-multiselect[1]
-2026-07-03 09:25:26 [main] INFO  com.automation.utils.ElementUtils - Dropdown opened successfully. Option is now visible.
-2026-07-03 09:25:33 [main] INFO  com.automation.utils.ElementUtils - Found 556 option elements matching By.xpath: //*[contains(text(), 'Birth City')]/following::angular2-multiselect[1]//li (Attempt 1)
-2026-07-03 09:25:33 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Adelanto', Displayed=true
-2026-07-03 09:25:33 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Agoura Hills', Displayed=true
-2026-07-03 09:25:33 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alameda', Displayed=true
-2026-07-03 09:25:33 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alamo', Displayed=true
-2026-07-03 09:25:33 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Albany', Displayed=true
-2026-07-03 09:25:33 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alhambra', Displayed=true
-2026-07-03 09:25:33 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Aliso Viejo', Displayed=true
-2026-07-03 09:25:34 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alondra Park', Displayed=true
-2026-07-03 09:25:34 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alpine', Displayed=true
-2026-07-03 09:25:34 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alta Sierra', Displayed=true
-2026-07-03 09:25:34 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Altadena', Displayed=true
-2026-07-03 09:25:34 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alum Rock', Displayed=true
-2026-07-03 09:25:34 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='American Canyon', Displayed=true
-2026-07-03 09:25:34 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Anaheim', Displayed=true
-2026-07-03 09:25:34 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Anderson', Displayed=true
-2026-07-03 09:25:34 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Antioch', Displayed=true
-2026-07-03 09:25:34 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Apple Valley', Displayed=true
-2026-07-03 09:25:34 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Aptos', Displayed=true
-2026-07-03 09:25:34 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arcadia', Displayed=true
-2026-07-03 09:25:34 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arcata', Displayed=true
-2026-07-03 09:25:34 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arden-Arcade', Displayed=true
-2026-07-03 09:25:34 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arroyo Grande', Displayed=true
-2026-07-03 09:25:34 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Artesia', Displayed=true
-2026-07-03 09:25:34 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arvin', Displayed=true
-2026-07-03 09:25:34 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Ashland', Displayed=true
-2026-07-03 09:25:34 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Atascadero', Displayed=true
-2026-07-03 09:25:35 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Atherton', Displayed=true
-2026-07-03 09:25:35 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Atwater', Displayed=true
-2026-07-03 09:25:35 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Auburn', Displayed=true
-2026-07-03 09:25:35 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='August', Displayed=true
-2026-07-03 09:25:35 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Avenal', Displayed=true
-2026-07-03 09:25:35 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Avocado Heights', Displayed=true
-2026-07-03 09:25:35 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Azusa', Displayed=true
-2026-07-03 09:25:35 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bakersfield', Displayed=true
-2026-07-03 09:25:35 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Baldwin Park', Displayed=true
-2026-07-03 09:25:35 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Banning', Displayed=true
-2026-07-03 09:25:35 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Barstow', Displayed=true
-2026-07-03 09:25:35 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bay Point', Displayed=true
-2026-07-03 09:25:35 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Baywood-Los Osos', Displayed=true
-2026-07-03 09:25:35 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Beaumont', Displayed=true
-2026-07-03 09:25:35 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bell', Displayed=true
-2026-07-03 09:25:35 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bell Gardens', Displayed=true
-2026-07-03 09:25:35 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bellflower', Displayed=true
-2026-07-03 09:25:35 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Belmont', Displayed=true
-2026-07-03 09:25:35 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Benicia', Displayed=true
-2026-07-03 09:25:35 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Berkeley', Displayed=true
-2026-07-03 09:25:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bermuda Dunes', Displayed=true
-2026-07-03 09:25:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Beverly Hills', Displayed=true
-2026-07-03 09:25:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Blackhawk-Camino Tassajara', Displayed=true
-2026-07-03 09:25:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bloomington', Displayed=true
-2026-07-03 09:25:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Blythe', Displayed=true
-2026-07-03 09:25:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bonadelle Ranchos-Madera Ranchos', Displayed=true
-2026-07-03 09:25:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bonita', Displayed=true
-2026-07-03 09:25:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bostonia', Displayed=true
-2026-07-03 09:25:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Boyes Hot Springs', Displayed=true
-2026-07-03 09:25:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Brawley', Displayed=true
-2026-07-03 09:25:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Brea', Displayed=true
-2026-07-03 09:25:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Brentwood', Displayed=true
-2026-07-03 09:25:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Buena Park', Displayed=true
-2026-07-03 09:25:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Burbank', Displayed=true
-2026-07-03 09:25:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Burlingame', Displayed=true
-2026-07-03 09:25:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Calabasas', Displayed=true
-2026-07-03 09:25:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Calexico', Displayed=true
-2026-07-03 09:25:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='California City', Displayed=true
-2026-07-03 09:25:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Calimesa', Displayed=true
-2026-07-03 09:25:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Calipatria', Displayed=true
-2026-07-03 09:25:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Camarillo', Displayed=true
-2026-07-03 09:25:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cambria', Displayed=true
-2026-07-03 09:25:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cameron Park', Displayed=true
-2026-07-03 09:25:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Camp Pendleton North', Displayed=true
-2026-07-03 09:25:37 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Camp Pendleton South', Displayed=true
-2026-07-03 09:25:37 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Campbell', Displayed=true
-2026-07-03 09:25:37 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Canyon Lake', Displayed=true
-2026-07-03 09:25:37 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Capitola', Displayed=true
-2026-07-03 09:25:37 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Carlsbad', Displayed=true
-2026-07-03 09:25:37 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Carmichael', Displayed=true
-2026-07-03 09:25:37 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Carpinteria', Displayed=true
-2026-07-03 09:25:37 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Carson', Displayed=true
-2026-07-03 09:25:37 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Casa de Oro-Mount Helix', Displayed=true
-2026-07-03 09:25:37 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Castro Valley', Displayed=true
-2026-07-03 09:25:37 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Castroville', Displayed=true
-2026-07-03 09:25:37 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cathedral City', Displayed=true
-2026-07-03 09:25:37 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Ceres', Displayed=true
-2026-07-03 09:25:37 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cerritos', Displayed=true
-2026-07-03 09:25:37 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Charter Oak', Displayed=true
-2026-07-03 09:25:37 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cherryland', Displayed=true
-2026-07-03 09:25:37 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Chico', Displayed=true
-2026-07-03 09:25:37 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Chino', Displayed=true
-2026-07-03 09:25:37 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Chino Hills', Displayed=true
-2026-07-03 09:25:37 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Chowchilla', Displayed=true
-2026-07-03 09:25:37 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Chula Vista', Displayed=true
-2026-07-03 09:25:37 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Citrus', Displayed=true
-2026-07-03 09:25:37 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Citrus Heights', Displayed=true
-2026-07-03 09:25:37 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Claremont', Displayed=true
-2026-07-03 09:25:38 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Clayton', Displayed=true
-2026-07-03 09:25:38 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Clearlake', Displayed=true
-2026-07-03 09:25:38 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cloverdale', Displayed=true
-2026-07-03 09:25:38 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Clovis', Displayed=true
-2026-07-03 09:25:38 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Coachella', Displayed=true
-2026-07-03 09:25:38 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Coalinga', Displayed=true
-2026-07-03 09:25:38 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Colton', Displayed=true
-2026-07-03 09:25:38 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Commerce', Displayed=true
-2026-07-03 09:25:38 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Compton', Displayed=true
-2026-07-03 09:25:38 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Concord', Displayed=true
-2026-07-03 09:25:38 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Corcoran', Displayed=true
-2026-07-03 09:25:38 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Corning', Displayed=true
-2026-07-03 09:25:38 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Corona', Displayed=true
-2026-07-03 09:25:38 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Coronado', Displayed=true
-2026-07-03 09:25:38 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Corte Madera', Displayed=true
-2026-07-03 09:25:38 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Costa Mesa', Displayed=true
-2026-07-03 09:25:38 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cotati', Displayed=true
-2026-07-03 09:25:38 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Coto de Caza', Displayed=true
-2026-07-03 09:25:38 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Country Club', Displayed=true
-2026-07-03 09:25:38 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Covina', Displayed=true
-2026-07-03 09:25:39 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Crestline', Displayed=true
-2026-07-03 09:25:39 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cudahy', Displayed=true
-2026-07-03 09:25:39 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Culver City', Displayed=true
-2026-07-03 09:25:39 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cupertino', Displayed=true
-2026-07-03 09:25:39 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cypress', Displayed=true
-2026-07-03 09:25:39 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Daly City', Displayed=true
-2026-07-03 09:25:39 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Dana Point', Displayed=true
-2026-07-03 09:25:39 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Danville', Displayed=true
-2026-07-03 09:25:39 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Davis', Displayed=true
-2026-07-03 09:25:39 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Del Aire', Displayed=true
-2026-07-03 09:25:39 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Delano', Displayed=true
-2026-07-03 09:25:39 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Delhi', Displayed=true
-2026-07-03 09:25:39 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Desert Hot Springs', Displayed=true
-2026-07-03 09:25:39 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Diamond Bar', Displayed=true
-2026-07-03 09:25:39 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Dinuba', Displayed=true
-2026-07-03 09:25:39 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Discovery Bay', Displayed=true
-2026-07-03 09:25:39 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Dixon', Displayed=true
-2026-07-03 09:25:39 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Downey', Displayed=true
-2026-07-03 09:25:40 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Duarte', Displayed=true
-2026-07-03 09:25:40 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Dublin', Displayed=true
-2026-07-03 09:25:40 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Earlimart', Displayed=true
-2026-07-03 09:25:40 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='East Compton', Displayed=true
-2026-07-03 09:25:40 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='East Foothills', Displayed=true
-2026-07-03 09:25:40 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='East Hemet', Displayed=true
-2026-07-03 09:25:40 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='East La Mirada', Displayed=true
-2026-07-03 09:25:40 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='East Los Angeles', Displayed=true
-2026-07-03 09:25:40 [main] INFO  com.automation.utils.ElementUtils - Clicking option containing 'Los Angeles'
-2026-07-03 09:25:40 [main] INFO  com.automation.pages.onboarding.AdditionalBasicInfoPage - Selecting Citizenship: United States
-2026-07-03 09:25:40 [main] INFO  com.automation.utils.ElementUtils - Opening dropdown By.id: citizenship and selecting option containing 'United States'
-2026-07-03 09:25:40 [main] INFO  com.automation.utils.ElementUtils - Found 1 potential dropdown trigger elements matching By.id: citizenship
-2026-07-03 09:25:40 [main] INFO  com.automation.utils.ElementUtils - Trigger [0]: Tag='angular2-multiselect', Text='Select Citizenship', Class='onboarding_select ng-untouched ng-pristine ng-invalid', Displayed=true
-2026-07-03 09:25:40 [main] INFO  com.automation.utils.ElementUtils - Attempt 1 to click dropdown trigger...
-2026-07-03 09:25:40 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: citizenship to be clickable (Timeout: 5s)
-2026-07-03 09:25:40 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.id: citizenship
-2026-07-03 09:25:41 [main] INFO  com.automation.utils.ElementUtils - Dropdown opened successfully. Option is now visible.
-2026-07-03 09:25:44 [main] INFO  com.automation.utils.ElementUtils - Found 242 option elements matching By.xpath: //angular2-multiselect[@id='citizenship']//li (Attempt 1)
-2026-07-03 09:25:44 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='United States', Displayed=true
-2026-07-03 09:25:44 [main] INFO  com.automation.utils.ElementUtils - Clicking option containing 'United States'
-2026-07-03 09:25:44 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'Jane Doe' in element By.xpath: //input[@name='emergencyContact']
-2026-07-03 09:25:44 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //input[@name='emergencyContact'] to be visible (Timeout: 15s)
-2026-07-03 09:25:44 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'Friend' in element By.xpath: //input[@name='emergencyRelationship']
-2026-07-03 09:25:44 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //input[@name='emergencyRelationship'] to be visible (Timeout: 15s)
-2026-07-03 09:25:45 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing '5551234567' in element By.xpath: //input[@name='emergencyPhone']
-2026-07-03 09:25:45 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //input[@name='emergencyPhone'] to be visible (Timeout: 15s)
-2026-07-03 09:25:45 [main] INFO  com.automation.utils.ReportUtils - Clicking Additional Save & Next...
-2026-07-03 09:25:45 [main] INFO  com.automation.pages.onboarding.AdditionalBasicInfoPage - Clicking Additional Save & Next button...
-2026-07-03 09:25:45 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[@name='saveBut'] | //button[@type='submit' and contains(@name, 'save')] to be clickable (Timeout: 15s)
-2026-07-03 09:25:45 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[@name='saveBut'] | //button[@type='submit' and contains(@name, 'save')]
-2026-07-03 09:25:45 [main] INFO  com.automation.utils.ReportUtils - Filling Education form details...
-2026-07-03 09:25:47 [main] INFO  com.automation.pages.onboarding.EducationPage - Filling Professional School Information...
-2026-07-03 09:25:47 [main] INFO  com.automation.utils.ElementUtils - Opening dropdown By.id: profSchoolName0 and selecting option containing 'ACADEMY OF ART UNIVERSITY'
-2026-07-03 09:25:47 [main] INFO  com.automation.utils.ElementUtils - Found 1 potential dropdown trigger elements matching By.id: profSchoolName0
-2026-07-03 09:25:48 [main] INFO  com.automation.utils.ElementUtils - Trigger [0]: Tag='angular2-multiselect', Text='Select Professional School', Class='w-100 onboarding_select ng-untouched ng-pristine ng-invalid', Displayed=true
-2026-07-03 09:25:48 [main] INFO  com.automation.utils.ElementUtils - Attempt 1 to click dropdown trigger...
-2026-07-03 09:25:48 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: profSchoolName0 to be clickable (Timeout: 5s)
-2026-07-03 09:25:48 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.id: profSchoolName0
-2026-07-03 09:25:48 [main] INFO  com.automation.utils.ElementUtils - Dropdown opened successfully. Option is now visible.
-2026-07-03 09:25:49 [main] INFO  com.automation.utils.ElementUtils - Found 51 option elements matching By.xpath: //angular2-multiselect[@id='profSchoolName0']//li (Attempt 1)
-2026-07-03 09:25:49 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='A.T. STILL UNIVERSITY OF HEALTH SCIENCES', Displayed=true
-2026-07-03 09:25:49 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='A.T.C.', Displayed=true
-2026-07-03 09:25:49 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='AAKER'S COLLEGE', Displayed=true
-2026-07-03 09:25:49 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='AANIIIH NAKODA COLLEGE', Displayed=true
-2026-07-03 09:25:49 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='ABILENE CHRISTIAN UNIVERSITY', Displayed=true
-2026-07-03 09:25:49 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='ABINGTON HOSPITAL SCHOOL OF NURSING', Displayed=true
-2026-07-03 09:25:49 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='ABRAHAM BALDWIN AGRICULTURAL COLLEGE', Displayed=true
-2026-07-03 09:25:49 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='ABRAHAM LINCOLN UNIVERSITY', Displayed=true
-2026-07-03 09:25:49 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='ACADEMY OF ART COLLEGE', Displayed=true
-2026-07-03 09:25:49 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='ACADEMY OF ART UNIVERSITY', Displayed=true
-2026-07-03 09:25:49 [main] INFO  com.automation.utils.ElementUtils - Clicking option containing 'ACADEMY OF ART UNIVERSITY'
-2026-07-03 09:25:49 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'Doctor of Medicine' in element By.id: schoolDegree0
-2026-07-03 09:25:49 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: schoolDegree0 to be visible (Timeout: 15s)
-2026-07-03 09:25:50 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'Medicine' in element By.id: schoolAreaTraining0
-2026-07-03 09:25:50 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: schoolAreaTraining0 to be visible (Timeout: 15s)
-2026-07-03 09:25:50 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing '09012010' in element By.id: schoolStartDate0
-2026-07-03 09:25:50 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: schoolStartDate0 to be visible (Timeout: 15s)
-2026-07-03 09:25:50 [main] INFO  com.automation.utils.ElementUtils - Setting date value via JS: 2010-09-01
-2026-07-03 09:25:50 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing '05012014' in element By.id: schoolEndDate0
-2026-07-03 09:25:50 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: schoolEndDate0 to be visible (Timeout: 15s)
-2026-07-03 09:25:50 [main] INFO  com.automation.utils.ElementUtils - Setting date value via JS: 2014-05-01
-2026-07-03 09:25:50 [main] INFO  com.automation.utils.ElementUtils - Dropdown By.xpath: (//div[@id='collapseCredOne0']//angular2-multiselect[@name='updateStateName'])[1] is already selected with 'California'. Skipping selection.
-2026-07-03 09:25:50 [main] INFO  com.automation.pages.onboarding.EducationPage - Filling Undergraduate Education Information...
-2026-07-03 09:25:50 [main] INFO  com.automation.utils.ElementUtils - Opening dropdown By.id: ugSchoolName0 and selecting option containing 'ACADEMY OF ART UNIVERSITY'
-2026-07-03 09:25:50 [main] INFO  com.automation.utils.ElementUtils - Found 1 potential dropdown trigger elements matching By.id: ugSchoolName0
-2026-07-03 09:25:50 [main] INFO  com.automation.utils.ElementUtils - Trigger [0]: Tag='angular2-multiselect', Text='Select Undergraduate School', Class='w-100 onboarding_select ng-untouched ng-pristine ng-invalid', Displayed=true
-2026-07-03 09:25:50 [main] INFO  com.automation.utils.ElementUtils - Attempt 1 to click dropdown trigger...
-2026-07-03 09:25:50 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: ugSchoolName0 to be clickable (Timeout: 5s)
-2026-07-03 09:25:50 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.id: ugSchoolName0
-2026-07-03 09:25:51 [main] INFO  com.automation.utils.ElementUtils - Dropdown opened successfully. Option is now visible.
-2026-07-03 09:25:51 [main] INFO  com.automation.utils.ElementUtils - Found 51 option elements matching By.xpath: //angular2-multiselect[@id='ugSchoolName0']//li (Attempt 1)
-2026-07-03 09:25:51 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='A.T. STILL UNIVERSITY OF HEALTH SCIENCES', Displayed=true
-2026-07-03 09:25:51 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='A.T.C.', Displayed=true
-2026-07-03 09:25:51 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='AAKER'S COLLEGE', Displayed=true
-2026-07-03 09:25:51 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='AANIIIH NAKODA COLLEGE', Displayed=true
-2026-07-03 09:25:51 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='ABILENE CHRISTIAN UNIVERSITY', Displayed=true
-2026-07-03 09:25:52 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='ABINGTON HOSPITAL SCHOOL OF NURSING', Displayed=true
-2026-07-03 09:25:52 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='ABRAHAM BALDWIN AGRICULTURAL COLLEGE', Displayed=true
-2026-07-03 09:25:52 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='ABRAHAM LINCOLN UNIVERSITY', Displayed=true
-2026-07-03 09:25:52 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='ACADEMY OF ART COLLEGE', Displayed=true
-2026-07-03 09:25:52 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='ACADEMY OF ART UNIVERSITY', Displayed=true
-2026-07-03 09:25:52 [main] INFO  com.automation.utils.ElementUtils - Clicking option containing 'ACADEMY OF ART UNIVERSITY'
-2026-07-03 09:25:52 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'Bachelor of Science' in element By.xpath: (//div[@id='collapseCredOne1']//input[contains(@placeholder, 'Degree')])[1]
-2026-07-03 09:25:52 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: (//div[@id='collapseCredOne1']//input[contains(@placeholder, 'Degree')])[1] to be visible (Timeout: 15s)
-2026-07-03 09:25:52 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'Biology' in element By.xpath: (//div[@id='collapseCredOne1']//input[contains(@placeholder, 'Area of Training')])[1]
-2026-07-03 09:25:52 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: (//div[@id='collapseCredOne1']//input[contains(@placeholder, 'Area of Training')])[1] to be visible (Timeout: 15s)
-2026-07-03 09:25:52 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing '09012006' in element By.xpath: (//div[@id='collapseCredOne1']//input[contains(@placeholder, 'MM/DD/YYYY') or @type='date'])[1]
-2026-07-03 09:25:52 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: (//div[@id='collapseCredOne1']//input[contains(@placeholder, 'MM/DD/YYYY') or @type='date'])[1] to be visible (Timeout: 15s)
-2026-07-03 09:25:52 [main] INFO  com.automation.utils.ElementUtils - Setting date value via JS: 2006-09-01
-2026-07-03 09:25:52 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing '05012010' in element By.xpath: (//div[@id='collapseCredOne1']//input[contains(@placeholder, 'MM/DD/YYYY') or @type='date'])[2]
-2026-07-03 09:25:52 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: (//div[@id='collapseCredOne1']//input[contains(@placeholder, 'MM/DD/YYYY') or @type='date'])[2] to be visible (Timeout: 15s)
-2026-07-03 09:25:52 [main] INFO  com.automation.utils.ElementUtils - Setting date value via JS: 2010-05-01
-2026-07-03 09:25:52 [main] INFO  com.automation.utils.ElementUtils - Dropdown By.xpath: (//div[@id='collapseCredOne1']//angular2-multiselect[@name='updateStateName'])[1] is already selected with 'California'. Skipping selection.
-2026-07-03 09:25:52 [main] INFO  com.automation.pages.onboarding.EducationPage - Filling Professional Training Information...
-2026-07-03 09:25:52 [main] INFO  com.automation.utils.ElementUtils - Opening dropdown By.id: licenseTypeSelectBox0 and selecting option containing 'Residency'
-2026-07-03 09:25:52 [main] INFO  com.automation.utils.ElementUtils - Found 1 potential dropdown trigger elements matching By.id: licenseTypeSelectBox0
-2026-07-03 09:25:53 [main] INFO  com.automation.utils.ElementUtils - Trigger [0]: Tag='angular2-multiselect', Text='Select License Type', Class='onboarding_select ng-untouched ng-pristine ng-invalid', Displayed=true
-2026-07-03 09:25:53 [main] INFO  com.automation.utils.ElementUtils - Attempt 1 to click dropdown trigger...
-2026-07-03 09:25:53 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: licenseTypeSelectBox0 to be clickable (Timeout: 5s)
-2026-07-03 09:25:53 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.id: licenseTypeSelectBox0
-2026-07-03 09:25:53 [main] INFO  com.automation.utils.ElementUtils - Dropdown opened successfully. Option is now visible.
-2026-07-03 09:25:53 [main] INFO  com.automation.utils.ElementUtils - Found 6 option elements matching By.xpath: //angular2-multiselect[@id='licenseTypeSelectBox0']//li (Attempt 1)
-2026-07-03 09:25:53 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Internship', Displayed=true
-2026-07-03 09:25:53 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Residency', Displayed=true
-2026-07-03 09:25:53 [main] INFO  com.automation.utils.ElementUtils - Clicking option containing 'Residency'
-2026-07-03 09:25:53 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'Los Angeles General Hospital' in element By.xpath: (//div[@id='collapseCredOne2']//input[contains(@placeholder, 'Institution/Hospital Name')])[1]
-2026-07-03 09:25:53 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: (//div[@id='collapseCredOne2']//input[contains(@placeholder, 'Institution/Hospital Name')])[1] to be visible (Timeout: 15s)
-2026-07-03 09:25:54 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'Internal Medicine' in element By.xpath: (//div[@id='collapseCredOne2']//input[contains(@placeholder, 'Department')])[1]
-2026-07-03 09:25:54 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: (//div[@id='collapseCredOne2']//input[contains(@placeholder, 'Department')])[1] to be visible (Timeout: 15s)
-2026-07-03 09:25:54 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing '07012014' in element By.xpath: (//div[@id='collapseCredOne2']//input[@type='date'])[1]
-2026-07-03 09:25:54 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: (//div[@id='collapseCredOne2']//input[@type='date'])[1] to be visible (Timeout: 15s)
-2026-07-03 09:25:54 [main] INFO  com.automation.utils.ElementUtils - Setting date value via JS: 2014-07-01
-2026-07-03 09:25:54 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing '06302017' in element By.xpath: (//div[@id='collapseCredOne2']//input[@type='date'])[2]
-2026-07-03 09:25:54 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: (//div[@id='collapseCredOne2']//input[@type='date'])[2] to be visible (Timeout: 15s)
-2026-07-03 09:25:54 [main] INFO  com.automation.utils.ElementUtils - Setting date value via JS: 2017-06-30
-2026-07-03 09:25:54 [main] INFO  com.automation.utils.ReportUtils - Clicking Education Save & Next...
-2026-07-03 09:25:54 [main] INFO  com.automation.pages.onboarding.EducationPage - Clicking Education Save & Next button...
-2026-07-03 09:25:54 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[@type='submit' and contains(., 'Save & Next')] to be clickable (Timeout: 15s)
-2026-07-03 09:25:54 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[@type='submit' and contains(., 'Save & Next')]
-2026-07-03 09:25:54 [main] INFO  com.automation.utils.ReportUtils - Waiting for License page to load...
-2026-07-03 09:25:57 [main] INFO  com.automation.utils.ReportUtils - Saved page source for License page to target/license.html
-2026-07-03 09:25:57 [main] INFO  com.automation.utils.ReportUtils - Filling any incomplete fields on License page...
-2026-07-03 09:25:57 [main] INFO  com.automation.pages.onboarding.LicensePage - Waiting for state license loader to disappear...
-2026-07-03 09:25:57 [main] INFO  com.automation.pages.onboarding.LicensePage - State license loader disappeared.
-2026-07-03 09:25:58 [main] INFO  com.automation.pages.onboarding.LicensePage - Checking for incomplete licenses on License/DEA page...
-2026-07-03 09:25:59 [main] INFO  com.automation.utils.ReportUtils - Clicking Save & Next on License page...
-2026-07-03 09:25:59 [main] INFO  com.automation.pages.onboarding.LicensePage - Clicking License Save & Next button...
-2026-07-03 09:25:59 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[@type='submit' and contains(., 'Save & Next')] | //button[contains(., 'Save & Next')] to be clickable (Timeout: 15s)
-2026-07-03 09:25:59 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[@type='submit' and contains(., 'Save & Next')] | //button[contains(., 'Save & Next')]
-2026-07-03 09:25:59 [main] INFO  com.automation.utils.ReportUtils - Waiting for DEA page to load...
-2026-07-03 09:26:01 [main] INFO  com.automation.utils.ReportUtils - Filling any incomplete fields on DEA page...
-2026-07-03 09:26:01 [main] INFO  com.automation.pages.onboarding.LicensePage - Waiting for state license loader to disappear...
-2026-07-03 09:26:01 [main] INFO  com.automation.pages.onboarding.LicensePage - State license loader disappeared.
-2026-07-03 09:26:02 [main] INFO  com.automation.pages.onboarding.LicensePage - Checking for incomplete licenses on License/DEA page...
-2026-07-03 09:26:03 [main] INFO  com.automation.pages.onboarding.LicensePage - License State dropdown 1 is empty. Selecting CA...
-2026-07-03 09:26:05 [main] INFO  com.automation.utils.ReportUtils - Clicking Save & Next on DEA page...
-2026-07-03 09:26:05 [main] INFO  com.automation.pages.onboarding.DeaPage - Clicking DEA Save & Next button...
-2026-07-03 09:26:05 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[@name='saveBut'] | //button[@type='submit' and contains(., 'Save & Next')] to be clickable (Timeout: 15s)
-2026-07-03 09:26:05 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[@name='saveBut'] | //button[@type='submit' and contains(., 'Save & Next')]
-2026-07-03 09:26:05 [main] INFO  com.automation.utils.ReportUtils - Waiting for Affiliations page to load...
-2026-07-03 09:26:09 [main] INFO  com.automation.utils.ReportUtils - Filling Affiliations & Work History form details...
-2026-07-03 09:26:09 [main] INFO  com.automation.pages.onboarding.AffiliationsPage - Filling Affiliations & Work History: Employer='California Health Center', StartDate='07012017', State='California', City='Los Angeles', EndDate='12312023'
-2026-07-03 09:26:09 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'California Health Center' in element By.id: Employer0
-2026-07-03 09:26:09 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: Employer0 to be visible (Timeout: 15s)
-2026-07-03 09:26:09 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing '07012017' in element By.id: employStartDate0
-2026-07-03 09:26:09 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: employStartDate0 to be visible (Timeout: 15s)
-2026-07-03 09:26:09 [main] INFO  com.automation.utils.ElementUtils - Setting date value via JS: 2017-07-01
-2026-07-03 09:26:09 [main] INFO  com.automation.pages.onboarding.AffiliationsPage - Selecting State Name: California
-2026-07-03 09:26:10 [main] INFO  com.automation.utils.ElementUtils - Opening dropdown By.xpath: //angular2-multiselect[@name='updateStateName'] and selecting option containing 'California'
-2026-07-03 09:26:10 [main] INFO  com.automation.utils.ElementUtils - Found 1 potential dropdown trigger elements matching By.xpath: //angular2-multiselect[@name='updateStateName']
-2026-07-03 09:26:10 [main] INFO  com.automation.utils.ElementUtils - Trigger [0]: Tag='angular2-multiselect', Text='Select State', Class='ng-untouched ng-pristine ng-invalid', Displayed=true
-2026-07-03 09:26:10 [main] INFO  com.automation.utils.ElementUtils - Attempt 1 to click dropdown trigger...
-2026-07-03 09:26:10 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //angular2-multiselect[@name='updateStateName'] to be clickable (Timeout: 5s)
-2026-07-03 09:26:10 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //angular2-multiselect[@name='updateStateName']
-2026-07-03 09:26:10 [main] INFO  com.automation.utils.ElementUtils - Dropdown opened successfully. Option is now visible.
-2026-07-03 09:26:11 [main] INFO  com.automation.utils.ElementUtils - Found 62 option elements matching By.xpath: //angular2-multiselect[@name='updateStateName']//li (Attempt 1)
-2026-07-03 09:26:11 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='National', Displayed=true
-2026-07-03 09:26:11 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alabama', Displayed=true
-2026-07-03 09:26:11 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alaska', Displayed=true
-2026-07-03 09:26:11 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='American Samoa', Displayed=true
-2026-07-03 09:26:11 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arizona', Displayed=true
-2026-07-03 09:26:11 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arkansas', Displayed=true
-2026-07-03 09:26:11 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='California', Displayed=true
-2026-07-03 09:26:11 [main] INFO  com.automation.utils.ElementUtils - Clicking option containing 'California'
-2026-07-03 09:26:13 [main] INFO  com.automation.pages.onboarding.AffiliationsPage - Selecting City: Los Angeles
-2026-07-03 09:26:13 [main] INFO  com.automation.utils.ElementUtils - Opening dropdown By.xpath: //angular2-multiselect[@name='cityNameSelect'] and selecting option containing 'Los Angeles'
-2026-07-03 09:26:13 [main] INFO  com.automation.utils.ElementUtils - Found 1 potential dropdown trigger elements matching By.xpath: //angular2-multiselect[@name='cityNameSelect']
-2026-07-03 09:26:13 [main] INFO  com.automation.utils.ElementUtils - Trigger [0]: Tag='angular2-multiselect', Text='Select City Name', Class='ng-untouched ng-pristine ng-valid', Displayed=true
-2026-07-03 09:26:13 [main] INFO  com.automation.utils.ElementUtils - Attempt 1 to click dropdown trigger...
-2026-07-03 09:26:13 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //angular2-multiselect[@name='cityNameSelect'] to be clickable (Timeout: 5s)
-2026-07-03 09:26:13 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //angular2-multiselect[@name='cityNameSelect']
-2026-07-03 09:26:14 [main] INFO  com.automation.utils.ElementUtils - Dropdown opened successfully. Option is now visible.
-2026-07-03 09:26:21 [main] INFO  com.automation.utils.ElementUtils - Found 556 option elements matching By.xpath: //angular2-multiselect[@name='cityNameSelect']//li (Attempt 1)
-2026-07-03 09:26:21 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Adelanto', Displayed=true
-2026-07-03 09:26:21 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Agoura Hills', Displayed=true
-2026-07-03 09:26:21 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alameda', Displayed=true
-2026-07-03 09:26:21 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alamo', Displayed=true
-2026-07-03 09:26:21 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Albany', Displayed=true
-2026-07-03 09:26:21 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alhambra', Displayed=true
-2026-07-03 09:26:21 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Aliso Viejo', Displayed=true
-2026-07-03 09:26:21 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alondra Park', Displayed=true
-2026-07-03 09:26:21 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alpine', Displayed=true
-2026-07-03 09:26:21 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alta Sierra', Displayed=true
-2026-07-03 09:26:21 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Altadena', Displayed=true
-2026-07-03 09:26:21 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alum Rock', Displayed=true
-2026-07-03 09:26:21 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='American Canyon', Displayed=true
-2026-07-03 09:26:21 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Anaheim', Displayed=true
-2026-07-03 09:26:21 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Anderson', Displayed=true
-2026-07-03 09:26:21 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Antioch', Displayed=true
-2026-07-03 09:26:21 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Apple Valley', Displayed=true
-2026-07-03 09:26:21 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Aptos', Displayed=true
-2026-07-03 09:26:21 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arcadia', Displayed=true
-2026-07-03 09:26:21 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arcata', Displayed=true
-2026-07-03 09:26:21 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arden-Arcade', Displayed=true
-2026-07-03 09:26:22 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arroyo Grande', Displayed=true
-2026-07-03 09:26:22 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Artesia', Displayed=true
-2026-07-03 09:26:22 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arvin', Displayed=true
-2026-07-03 09:26:22 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Ashland', Displayed=true
-2026-07-03 09:26:22 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Atascadero', Displayed=true
-2026-07-03 09:26:22 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Atherton', Displayed=true
-2026-07-03 09:26:22 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Atwater', Displayed=true
-2026-07-03 09:26:22 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Auburn', Displayed=true
-2026-07-03 09:26:22 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='August', Displayed=true
-2026-07-03 09:26:22 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Avenal', Displayed=true
-2026-07-03 09:26:22 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Avocado Heights', Displayed=true
-2026-07-03 09:26:22 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Azusa', Displayed=true
-2026-07-03 09:26:22 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bakersfield', Displayed=true
-2026-07-03 09:26:22 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Baldwin Park', Displayed=true
-2026-07-03 09:26:22 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Banning', Displayed=true
-2026-07-03 09:26:22 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Barstow', Displayed=true
-2026-07-03 09:26:22 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bay Point', Displayed=true
-2026-07-03 09:26:22 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Baywood-Los Osos', Displayed=true
-2026-07-03 09:26:22 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Beaumont', Displayed=true
-2026-07-03 09:26:22 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bell', Displayed=true
-2026-07-03 09:26:22 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bell Gardens', Displayed=true
-2026-07-03 09:26:22 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bellflower', Displayed=true
-2026-07-03 09:26:23 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Belmont', Displayed=true
-2026-07-03 09:26:23 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Benicia', Displayed=true
-2026-07-03 09:26:23 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Berkeley', Displayed=true
-2026-07-03 09:26:23 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bermuda Dunes', Displayed=true
-2026-07-03 09:26:23 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Beverly Hills', Displayed=true
-2026-07-03 09:26:23 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Blackhawk-Camino Tassajara', Displayed=true
-2026-07-03 09:26:23 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bloomington', Displayed=true
-2026-07-03 09:26:23 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Blythe', Displayed=true
-2026-07-03 09:26:23 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bonadelle Ranchos-Madera Ranchos', Displayed=true
-2026-07-03 09:26:23 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bonita', Displayed=true
-2026-07-03 09:26:23 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bostonia', Displayed=true
-2026-07-03 09:26:23 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Boyes Hot Springs', Displayed=true
-2026-07-03 09:26:23 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Brawley', Displayed=true
-2026-07-03 09:26:23 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Brea', Displayed=true
-2026-07-03 09:26:23 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Brentwood', Displayed=true
-2026-07-03 09:26:23 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Buena Park', Displayed=true
-2026-07-03 09:26:23 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Burbank', Displayed=true
-2026-07-03 09:26:23 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Burlingame', Displayed=true
-2026-07-03 09:26:23 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Calabasas', Displayed=true
-2026-07-03 09:26:24 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Calexico', Displayed=true
-2026-07-03 09:26:24 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='California City', Displayed=true
-2026-07-03 09:26:24 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Calimesa', Displayed=true
-2026-07-03 09:26:24 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Calipatria', Displayed=true
-2026-07-03 09:26:24 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Camarillo', Displayed=true
-2026-07-03 09:26:24 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cambria', Displayed=true
-2026-07-03 09:26:24 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cameron Park', Displayed=true
-2026-07-03 09:26:24 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Camp Pendleton North', Displayed=true
-2026-07-03 09:26:24 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Camp Pendleton South', Displayed=true
-2026-07-03 09:26:24 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Campbell', Displayed=true
-2026-07-03 09:26:24 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Canyon Lake', Displayed=true
-2026-07-03 09:26:24 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Capitola', Displayed=true
-2026-07-03 09:26:24 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Carlsbad', Displayed=true
-2026-07-03 09:26:24 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Carmichael', Displayed=true
-2026-07-03 09:26:24 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Carpinteria', Displayed=true
-2026-07-03 09:26:24 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Carson', Displayed=true
-2026-07-03 09:26:24 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Casa de Oro-Mount Helix', Displayed=true
-2026-07-03 09:26:25 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Castro Valley', Displayed=true
-2026-07-03 09:26:25 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Castroville', Displayed=true
-2026-07-03 09:26:25 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cathedral City', Displayed=true
-2026-07-03 09:26:25 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Ceres', Displayed=true
-2026-07-03 09:26:25 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cerritos', Displayed=true
-2026-07-03 09:26:25 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Charter Oak', Displayed=true
-2026-07-03 09:26:25 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cherryland', Displayed=true
-2026-07-03 09:26:25 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Chico', Displayed=true
-2026-07-03 09:26:25 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Chino', Displayed=true
-2026-07-03 09:26:25 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Chino Hills', Displayed=true
-2026-07-03 09:26:25 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Chowchilla', Displayed=true
-2026-07-03 09:26:25 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Chula Vista', Displayed=true
-2026-07-03 09:26:25 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Citrus', Displayed=true
-2026-07-03 09:26:25 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Citrus Heights', Displayed=true
-2026-07-03 09:26:25 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Claremont', Displayed=true
-2026-07-03 09:26:25 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Clayton', Displayed=true
-2026-07-03 09:26:25 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Clearlake', Displayed=true
-2026-07-03 09:26:25 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cloverdale', Displayed=true
-2026-07-03 09:26:25 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Clovis', Displayed=true
-2026-07-03 09:26:26 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Coachella', Displayed=true
-2026-07-03 09:26:26 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Coalinga', Displayed=true
-2026-07-03 09:26:26 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Colton', Displayed=true
-2026-07-03 09:26:26 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Commerce', Displayed=true
-2026-07-03 09:26:26 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Compton', Displayed=true
-2026-07-03 09:26:26 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Concord', Displayed=true
-2026-07-03 09:26:26 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Corcoran', Displayed=true
-2026-07-03 09:26:26 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Corning', Displayed=true
-2026-07-03 09:26:26 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Corona', Displayed=true
-2026-07-03 09:26:26 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Coronado', Displayed=true
-2026-07-03 09:26:26 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Corte Madera', Displayed=true
-2026-07-03 09:26:26 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Costa Mesa', Displayed=true
-2026-07-03 09:26:26 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cotati', Displayed=true
-2026-07-03 09:26:26 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Coto de Caza', Displayed=true
-2026-07-03 09:26:26 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Country Club', Displayed=true
-2026-07-03 09:26:26 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Covina', Displayed=true
-2026-07-03 09:26:26 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Crestline', Displayed=true
-2026-07-03 09:26:26 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cudahy', Displayed=true
-2026-07-03 09:26:27 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Culver City', Displayed=true
-2026-07-03 09:26:27 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cupertino', Displayed=true
-2026-07-03 09:26:27 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cypress', Displayed=true
-2026-07-03 09:26:27 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Daly City', Displayed=true
-2026-07-03 09:26:27 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Dana Point', Displayed=true
-2026-07-03 09:26:27 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Danville', Displayed=true
-2026-07-03 09:26:27 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Davis', Displayed=true
-2026-07-03 09:26:27 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Del Aire', Displayed=true
-2026-07-03 09:26:27 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Delano', Displayed=true
-2026-07-03 09:26:27 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Delhi', Displayed=true
-2026-07-03 09:26:27 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Desert Hot Springs', Displayed=true
-2026-07-03 09:26:27 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Diamond Bar', Displayed=true
-2026-07-03 09:26:27 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Dinuba', Displayed=true
-2026-07-03 09:26:27 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Discovery Bay', Displayed=true
-2026-07-03 09:26:27 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Dixon', Displayed=true
-2026-07-03 09:26:27 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Downey', Displayed=true
-2026-07-03 09:26:27 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Duarte', Displayed=true
-2026-07-03 09:26:27 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Dublin', Displayed=true
-2026-07-03 09:26:27 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Earlimart', Displayed=true
-2026-07-03 09:26:28 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='East Compton', Displayed=true
-2026-07-03 09:26:28 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='East Foothills', Displayed=true
-2026-07-03 09:26:28 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='East Hemet', Displayed=true
-2026-07-03 09:26:28 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='East La Mirada', Displayed=true
-2026-07-03 09:26:28 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='East Los Angeles', Displayed=true
-2026-07-03 09:26:28 [main] INFO  com.automation.utils.ElementUtils - Clicking option containing 'Los Angeles'
-2026-07-03 09:26:28 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing '12312023' in element By.id: employEndDate0
-2026-07-03 09:26:28 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: employEndDate0 to be visible (Timeout: 15s)
-2026-07-03 09:26:28 [main] INFO  com.automation.utils.ElementUtils - Setting date value via JS: 2023-12-31
-2026-07-03 09:26:28 [main] INFO  com.automation.utils.ReportUtils - Clicking Affiliations Save & Next...
-2026-07-03 09:26:28 [main] INFO  com.automation.pages.onboarding.AffiliationsPage - Clicking Affiliations Save & Next button...
-2026-07-03 09:26:28 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[@type='submit' and contains(., 'Save & Next')] to be clickable (Timeout: 15s)
-2026-07-03 09:26:29 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[@type='submit' and contains(., 'Save & Next')]
-2026-07-03 09:26:29 [main] INFO  com.automation.utils.ReportUtils - Waiting for Provider Logins page to load...
-2026-07-03 09:26:31 [main] INFO  com.automation.utils.ReportUtils - Filling Portal Logins details...
-2026-07-03 09:26:31 [main] INFO  com.automation.pages.onboarding.PortalLoginsPage - Filling all username and password fields on Portal Logins page...
-2026-07-03 09:26:31 [main] INFO  com.automation.pages.onboarding.PortalLoginsPage - Filling username input 1...
-2026-07-03 09:26:31 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'autoUser1' in element By.xpath: (//input[contains(@id, 'userName') or contains(@placeholder, 'username')])[1]
-2026-07-03 09:26:31 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: (//input[contains(@id, 'userName') or contains(@placeholder, 'username')])[1] to be visible (Timeout: 15s)
-2026-07-03 09:26:31 [main] INFO  com.automation.pages.onboarding.PortalLoginsPage - Filling username input 2...
-2026-07-03 09:26:31 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'autoUser2' in element By.xpath: (//input[contains(@id, 'userName') or contains(@placeholder, 'username')])[2]
-2026-07-03 09:26:31 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: (//input[contains(@id, 'userName') or contains(@placeholder, 'username')])[2] to be visible (Timeout: 15s)
-2026-07-03 09:26:31 [main] INFO  com.automation.pages.onboarding.PortalLoginsPage - Filling password input 1...
-2026-07-03 09:26:31 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'AutoPass123!' in element By.xpath: (//input[contains(@id, 'password') or contains(@placeholder, 'password')])[1]
-2026-07-03 09:26:31 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: (//input[contains(@id, 'password') or contains(@placeholder, 'password')])[1] to be visible (Timeout: 15s)
-2026-07-03 09:26:31 [main] INFO  com.automation.pages.onboarding.PortalLoginsPage - Filling password input 2...
-2026-07-03 09:26:31 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'AutoPass123!' in element By.xpath: (//input[contains(@id, 'password') or contains(@placeholder, 'password')])[2]
-2026-07-03 09:26:31 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: (//input[contains(@id, 'password') or contains(@placeholder, 'password')])[2] to be visible (Timeout: 15s)
-2026-07-03 09:26:32 [main] INFO  com.automation.utils.ReportUtils - Clicking Portal Logins Save & Next...
-2026-07-03 09:26:32 [main] INFO  com.automation.pages.onboarding.PortalLoginsPage - Clicking Portal Logins Save & Next button...
-2026-07-03 09:26:32 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[@name='complete'] | //button[@type='submit' and contains(., 'Save & Next')] to be clickable (Timeout: 15s)
-2026-07-03 09:26:32 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[@name='complete'] | //button[@type='submit' and contains(., 'Save & Next')]
-2026-07-03 09:26:32 [main] INFO  com.automation.utils.ReportUtils - Waiting for Hospital Affiliations page to load...
-2026-07-03 09:26:34 [main] INFO  com.automation.utils.ReportUtils - Filling Hospital Affiliations details...
-2026-07-03 09:26:34 [main] INFO  com.automation.pages.onboarding.HospitalAffiliationsPage - Filling Hospital Affiliation: Street='123 Health Ave', State='California', City='Los Angeles', Country='Los Angeles County', Hospital='Los Angeles General Hospital', StartDate='07012017'
-2026-07-03 09:26:34 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing '123 Health Ave' in element By.id: street1
-2026-07-03 09:26:34 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: street1 to be visible (Timeout: 15s)
-2026-07-03 09:26:35 [main] INFO  com.automation.pages.onboarding.HospitalAffiliationsPage - Selecting State Name: California
-2026-07-03 09:26:35 [main] INFO  com.automation.utils.ElementUtils - Opening dropdown By.xpath: //angular2-multiselect[@name='updateStateName'] and selecting option containing 'California'
-2026-07-03 09:26:35 [main] INFO  com.automation.utils.ElementUtils - Found 1 potential dropdown trigger elements matching By.xpath: //angular2-multiselect[@name='updateStateName']
-2026-07-03 09:26:35 [main] INFO  com.automation.utils.ElementUtils - Trigger [0]: Tag='angular2-multiselect', Text='Select State', Class='ng-untouched ng-pristine ng-invalid', Displayed=true
-2026-07-03 09:26:35 [main] INFO  com.automation.utils.ElementUtils - Attempt 1 to click dropdown trigger...
-2026-07-03 09:26:35 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //angular2-multiselect[@name='updateStateName'] to be clickable (Timeout: 5s)
-2026-07-03 09:26:35 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //angular2-multiselect[@name='updateStateName']
-2026-07-03 09:26:35 [main] INFO  com.automation.utils.ElementUtils - Dropdown opened successfully. Option is now visible.
-2026-07-03 09:26:36 [main] INFO  com.automation.utils.ElementUtils - Found 62 option elements matching By.xpath: //angular2-multiselect[@name='updateStateName']//li (Attempt 1)
-2026-07-03 09:26:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='National', Displayed=true
-2026-07-03 09:26:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alabama', Displayed=true
-2026-07-03 09:26:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alaska', Displayed=true
-2026-07-03 09:26:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='American Samoa', Displayed=true
-2026-07-03 09:26:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arizona', Displayed=true
-2026-07-03 09:26:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arkansas', Displayed=true
-2026-07-03 09:26:36 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='California', Displayed=true
-2026-07-03 09:26:36 [main] INFO  com.automation.utils.ElementUtils - Clicking option containing 'California'
-2026-07-03 09:26:38 [main] INFO  com.automation.pages.onboarding.HospitalAffiliationsPage - Selecting City: Los Angeles
-2026-07-03 09:26:38 [main] INFO  com.automation.utils.ElementUtils - Opening dropdown By.xpath: //angular2-multiselect[@name='cityNameSelect'] and selecting option containing 'Los Angeles'
-2026-07-03 09:26:38 [main] INFO  com.automation.utils.ElementUtils - Found 1 potential dropdown trigger elements matching By.xpath: //angular2-multiselect[@name='cityNameSelect']
-2026-07-03 09:26:39 [main] INFO  com.automation.utils.ElementUtils - Trigger [0]: Tag='angular2-multiselect', Text='Select City Name', Class='ng-untouched ng-pristine ng-valid', Displayed=true
-2026-07-03 09:26:39 [main] INFO  com.automation.utils.ElementUtils - Attempt 1 to click dropdown trigger...
-2026-07-03 09:26:39 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //angular2-multiselect[@name='cityNameSelect'] to be clickable (Timeout: 5s)
-2026-07-03 09:26:39 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //angular2-multiselect[@name='cityNameSelect']
-2026-07-03 09:26:39 [main] INFO  com.automation.utils.ElementUtils - Dropdown opened successfully. Option is now visible.
-2026-07-03 09:26:47 [main] INFO  com.automation.utils.ElementUtils - Found 556 option elements matching By.xpath: //angular2-multiselect[@name='cityNameSelect']//li (Attempt 1)
-2026-07-03 09:26:47 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Adelanto', Displayed=true
-2026-07-03 09:26:47 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Agoura Hills', Displayed=true
-2026-07-03 09:26:47 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alameda', Displayed=true
-2026-07-03 09:26:47 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alamo', Displayed=true
-2026-07-03 09:26:47 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Albany', Displayed=true
-2026-07-03 09:26:47 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alhambra', Displayed=true
-2026-07-03 09:26:47 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Aliso Viejo', Displayed=true
-2026-07-03 09:26:47 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alondra Park', Displayed=true
-2026-07-03 09:26:47 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alpine', Displayed=true
-2026-07-03 09:26:47 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alta Sierra', Displayed=true
-2026-07-03 09:26:47 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Altadena', Displayed=true
-2026-07-03 09:26:47 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Alum Rock', Displayed=true
-2026-07-03 09:26:47 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='American Canyon', Displayed=true
-2026-07-03 09:26:47 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Anaheim', Displayed=true
-2026-07-03 09:26:47 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Anderson', Displayed=true
-2026-07-03 09:26:47 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Antioch', Displayed=true
-2026-07-03 09:26:48 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Apple Valley', Displayed=true
-2026-07-03 09:26:48 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Aptos', Displayed=true
-2026-07-03 09:26:48 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arcadia', Displayed=true
-2026-07-03 09:26:48 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arcata', Displayed=true
-2026-07-03 09:26:48 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arden-Arcade', Displayed=true
-2026-07-03 09:26:48 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arroyo Grande', Displayed=true
-2026-07-03 09:26:48 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Artesia', Displayed=true
-2026-07-03 09:26:48 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Arvin', Displayed=true
-2026-07-03 09:26:49 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Ashland', Displayed=true
-2026-07-03 09:26:49 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Atascadero', Displayed=true
-2026-07-03 09:26:49 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Atherton', Displayed=true
-2026-07-03 09:26:49 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Atwater', Displayed=true
-2026-07-03 09:26:49 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Auburn', Displayed=true
-2026-07-03 09:26:49 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='August', Displayed=true
-2026-07-03 09:26:49 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Avenal', Displayed=true
-2026-07-03 09:26:49 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Avocado Heights', Displayed=true
-2026-07-03 09:26:49 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Azusa', Displayed=true
-2026-07-03 09:26:49 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bakersfield', Displayed=true
-2026-07-03 09:26:49 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Baldwin Park', Displayed=true
-2026-07-03 09:26:50 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Banning', Displayed=true
-2026-07-03 09:26:50 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Barstow', Displayed=true
-2026-07-03 09:26:50 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bay Point', Displayed=true
-2026-07-03 09:26:50 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Baywood-Los Osos', Displayed=true
-2026-07-03 09:26:50 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Beaumont', Displayed=true
-2026-07-03 09:26:50 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bell', Displayed=true
-2026-07-03 09:26:50 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bell Gardens', Displayed=true
-2026-07-03 09:26:50 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bellflower', Displayed=true
-2026-07-03 09:26:50 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Belmont', Displayed=true
-2026-07-03 09:26:50 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Benicia', Displayed=true
-2026-07-03 09:26:50 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Berkeley', Displayed=true
-2026-07-03 09:26:50 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bermuda Dunes', Displayed=true
-2026-07-03 09:26:50 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Beverly Hills', Displayed=true
-2026-07-03 09:26:50 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Blackhawk-Camino Tassajara', Displayed=true
-2026-07-03 09:26:50 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bloomington', Displayed=true
-2026-07-03 09:26:50 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Blythe', Displayed=true
-2026-07-03 09:26:50 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bonadelle Ranchos-Madera Ranchos', Displayed=true
-2026-07-03 09:26:50 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bonita', Displayed=true
-2026-07-03 09:26:50 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Bostonia', Displayed=true
-2026-07-03 09:26:50 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Boyes Hot Springs', Displayed=true
-2026-07-03 09:26:50 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Brawley', Displayed=true
-2026-07-03 09:26:51 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Brea', Displayed=true
-2026-07-03 09:26:51 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Brentwood', Displayed=true
-2026-07-03 09:26:51 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Buena Park', Displayed=true
-2026-07-03 09:26:51 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Burbank', Displayed=true
-2026-07-03 09:26:51 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Burlingame', Displayed=true
-2026-07-03 09:26:51 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Calabasas', Displayed=true
-2026-07-03 09:26:51 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Calexico', Displayed=true
-2026-07-03 09:26:51 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='California City', Displayed=true
-2026-07-03 09:26:51 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Calimesa', Displayed=true
-2026-07-03 09:26:51 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Calipatria', Displayed=true
-2026-07-03 09:26:51 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Camarillo', Displayed=true
-2026-07-03 09:26:51 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cambria', Displayed=true
-2026-07-03 09:26:51 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cameron Park', Displayed=true
-2026-07-03 09:26:51 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Camp Pendleton North', Displayed=true
-2026-07-03 09:26:51 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Camp Pendleton South', Displayed=true
-2026-07-03 09:26:51 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Campbell', Displayed=true
-2026-07-03 09:26:51 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Canyon Lake', Displayed=true
-2026-07-03 09:26:51 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Capitola', Displayed=true
-2026-07-03 09:26:51 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Carlsbad', Displayed=true
-2026-07-03 09:26:51 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Carmichael', Displayed=true
-2026-07-03 09:26:51 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Carpinteria', Displayed=true
-2026-07-03 09:26:52 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Carson', Displayed=true
-2026-07-03 09:26:52 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Casa de Oro-Mount Helix', Displayed=true
-2026-07-03 09:26:52 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Castro Valley', Displayed=true
-2026-07-03 09:26:52 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Castroville', Displayed=true
-2026-07-03 09:26:52 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cathedral City', Displayed=true
-2026-07-03 09:26:52 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Ceres', Displayed=true
-2026-07-03 09:26:52 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cerritos', Displayed=true
-2026-07-03 09:26:52 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Charter Oak', Displayed=true
-2026-07-03 09:26:52 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cherryland', Displayed=true
-2026-07-03 09:26:52 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Chico', Displayed=true
-2026-07-03 09:26:52 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Chino', Displayed=true
-2026-07-03 09:26:52 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Chino Hills', Displayed=true
-2026-07-03 09:26:52 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Chowchilla', Displayed=true
-2026-07-03 09:26:52 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Chula Vista', Displayed=true
-2026-07-03 09:26:52 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Citrus', Displayed=true
-2026-07-03 09:26:52 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Citrus Heights', Displayed=true
-2026-07-03 09:26:52 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Claremont', Displayed=true
-2026-07-03 09:26:53 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Clayton', Displayed=true
-2026-07-03 09:26:53 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Clearlake', Displayed=true
-2026-07-03 09:26:53 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cloverdale', Displayed=true
-2026-07-03 09:26:53 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Clovis', Displayed=true
-2026-07-03 09:26:53 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Coachella', Displayed=true
-2026-07-03 09:26:53 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Coalinga', Displayed=true
-2026-07-03 09:26:53 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Colton', Displayed=true
-2026-07-03 09:26:53 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Commerce', Displayed=true
-2026-07-03 09:26:53 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Compton', Displayed=true
-2026-07-03 09:26:53 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Concord', Displayed=true
-2026-07-03 09:26:53 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Corcoran', Displayed=true
-2026-07-03 09:26:53 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Corning', Displayed=true
-2026-07-03 09:26:53 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Corona', Displayed=true
-2026-07-03 09:26:53 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Coronado', Displayed=true
-2026-07-03 09:26:53 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Corte Madera', Displayed=true
-2026-07-03 09:26:53 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Costa Mesa', Displayed=true
-2026-07-03 09:26:53 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cotati', Displayed=true
-2026-07-03 09:26:53 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Coto de Caza', Displayed=true
-2026-07-03 09:26:53 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Country Club', Displayed=true
-2026-07-03 09:26:53 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Covina', Displayed=true
-2026-07-03 09:26:54 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Crestline', Displayed=true
-2026-07-03 09:26:54 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cudahy', Displayed=true
-2026-07-03 09:26:54 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Culver City', Displayed=true
-2026-07-03 09:26:54 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cupertino', Displayed=true
-2026-07-03 09:26:54 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Cypress', Displayed=true
-2026-07-03 09:26:54 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Daly City', Displayed=true
-2026-07-03 09:26:54 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Dana Point', Displayed=true
-2026-07-03 09:26:54 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Danville', Displayed=true
-2026-07-03 09:26:54 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Davis', Displayed=true
-2026-07-03 09:26:54 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Del Aire', Displayed=true
-2026-07-03 09:26:54 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Delano', Displayed=true
-2026-07-03 09:26:54 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Delhi', Displayed=true
-2026-07-03 09:26:54 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Desert Hot Springs', Displayed=true
-2026-07-03 09:26:54 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Diamond Bar', Displayed=true
-2026-07-03 09:26:54 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Dinuba', Displayed=true
-2026-07-03 09:26:54 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Discovery Bay', Displayed=true
-2026-07-03 09:26:54 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Dixon', Displayed=true
-2026-07-03 09:26:54 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Downey', Displayed=true
-2026-07-03 09:26:54 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Duarte', Displayed=true
-2026-07-03 09:26:54 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Dublin', Displayed=true
-2026-07-03 09:26:54 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Earlimart', Displayed=true
-2026-07-03 09:26:55 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='East Compton', Displayed=true
-2026-07-03 09:26:55 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='East Foothills', Displayed=true
-2026-07-03 09:26:55 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='East Hemet', Displayed=true
-2026-07-03 09:26:55 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='East La Mirada', Displayed=true
-2026-07-03 09:26:55 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='East Los Angeles', Displayed=true
-2026-07-03 09:26:55 [main] INFO  com.automation.utils.ElementUtils - Clicking option containing 'Los Angeles'
-2026-07-03 09:26:55 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'Los Angeles County' in element By.id: country0
-2026-07-03 09:26:55 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: country0 to be visible (Timeout: 15s)
-2026-07-03 09:26:55 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'Los Angeles General Hospital' in element By.id: providerHName
-2026-07-03 09:26:55 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: providerHName to be visible (Timeout: 15s)
-2026-07-03 09:26:55 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing '07012017' in element By.id: startDate0
-2026-07-03 09:26:55 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: startDate0 to be visible (Timeout: 15s)
-2026-07-03 09:26:55 [main] INFO  com.automation.utils.ElementUtils - Setting date value via JS: 2017-07-01
-2026-07-03 09:26:55 [main] INFO  com.automation.utils.ReportUtils - Clicking Hospital Save & Next...
-2026-07-03 09:26:55 [main] INFO  com.automation.pages.onboarding.HospitalAffiliationsPage - Clicking Hospital Affiliations Save & Next button...
-2026-07-03 09:26:55 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[@type='submit' and contains(., 'Save & Next')] to be clickable (Timeout: 15s)
-2026-07-03 09:26:56 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[@type='submit' and contains(., 'Save & Next')]
-2026-07-03 09:26:56 [main] INFO  com.automation.utils.ReportUtils - Waiting for Provider Privileges page to load...
-2026-07-03 09:26:57 [main] INFO  com.automation.utils.ReportUtils - Selecting Core Privileges...
-2026-07-03 09:26:57 [main] INFO  com.automation.pages.onboarding.PrivilegesPage - Selecting Core Privileges checkbox...
-2026-07-03 09:26:57 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //input[@id='flexCheckDefault'] | //input[@type='checkbox' and following-sibling::label[contains(text(), 'CORE PRIVILEGES') or contains(text(), 'Core Privileges')]] to be visible (Timeout: 15s)
-2026-07-03 09:26:58 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //input[@id='flexCheckDefault'] | //input[@type='checkbox' and following-sibling::label[contains(text(), 'CORE PRIVILEGES') or contains(text(), 'Core Privileges')]] to be clickable (Timeout: 15s)
-2026-07-03 09:26:58 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //input[@id='flexCheckDefault'] | //input[@type='checkbox' and following-sibling::label[contains(text(), 'CORE PRIVILEGES') or contains(text(), 'Core Privileges')]]
-2026-07-03 09:26:58 [main] INFO  com.automation.utils.ReportUtils - Clicking Privileges Save & Next...
-2026-07-03 09:26:58 [main] INFO  com.automation.pages.onboarding.PrivilegesPage - Clicking Privileges Save & Next button...
-2026-07-03 09:26:58 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[@type='submit' and contains(., 'Save & Next')] to be clickable (Timeout: 15s)
-2026-07-03 09:26:58 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[@type='submit' and contains(., 'Save & Next')]
-2026-07-03 09:26:58 [main] INFO  com.automation.utils.ReportUtils - Waiting for Professional Reference page to load...
-2026-07-03 09:27:02 [main] INFO  com.automation.utils.ReportUtils - Selecting 'Enter Professional Reference Details' option...
-2026-07-03 09:27:02 [main] INFO  com.automation.pages.onboarding.ProfessionalReferencePage - Selecting 'Enter Professional Reference Details' radio button...
-2026-07-03 09:27:02 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //label[@for='boardCertified11'] to be clickable (Timeout: 15s)
-2026-07-03 09:27:03 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //label[@for='boardCertified11']
-2026-07-03 09:27:06 [main] INFO  com.automation.utils.ReportUtils - Saved page source for Professional Reference to target/professional_reference.html
-2026-07-03 09:27:06 [main] INFO  com.automation.utils.ReportUtils - Saved screenshot of Professional Reference to target/professional_reference.png
-2026-07-03 09:27:06 [main] INFO  com.automation.utils.ReportUtils - Filling Professional Reference details for Reference 1 and Reference 2...
-2026-07-03 09:27:06 [main] INFO  com.automation.pages.onboarding.ProfessionalReferencePage - Filling Reference 1 Details: Name='Alok Reference One', Title='Supervisor', Phone='5551234567', Email='alok1@gmail.com'
-2026-07-03 09:27:06 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'Alok Reference One' in element By.id: referenceName0
-2026-07-03 09:27:06 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: referenceName0 to be visible (Timeout: 15s)
-2026-07-03 09:27:06 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'Supervisor' in element By.id: Title0
-2026-07-03 09:27:06 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: Title0 to be visible (Timeout: 15s)
-2026-07-03 09:27:07 [main] INFO  com.automation.pages.onboarding.ProfessionalReferencePage - Opening Specialty dropdown for Reference 1...
-2026-07-03 09:27:07 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: providerSpecialtySelectBox0 to be clickable (Timeout: 15s)
-2026-07-03 09:27:07 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.id: providerSpecialtySelectBox0
-2026-07-03 09:27:08 [main] INFO  com.automation.pages.onboarding.ProfessionalReferencePage - Selecting first specialty option for Reference 1...
-2026-07-03 09:27:08 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //angular2-multiselect[@id='providerSpecialtySelectBox0']//li[1] to be visible (Timeout: 15s)
-2026-07-03 09:27:09 [main] INFO  com.automation.pages.onboarding.ProfessionalReferencePage - Opening Relation dropdown for Reference 1...
-2026-07-03 09:27:09 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: (//nz-select[contains(@nzplaceholder, 'Relation') or @nzplaceholder='Select Relation'])[1] to be clickable (Timeout: 15s)
-2026-07-03 09:27:09 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: (//nz-select[contains(@nzplaceholder, 'Relation') or @nzplaceholder='Select Relation'])[1]
-2026-07-03 09:27:11 [main] INFO  com.automation.pages.onboarding.ProfessionalReferencePage - Selecting 'Colleague' option for Reference 1...
-2026-07-03 09:27:11 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: (//nz-option-item[contains(., 'Colleague')] | //*[contains(@class, 'ant-select-item-option-content') and contains(., 'Colleague')] | //li[contains(text(), 'Colleague')] | //*[contains(text(), 'Colleague')])[last()] to be clickable (Timeout: 15s)
-2026-07-03 09:27:11 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: (//nz-option-item[contains(., 'Colleague')] | //*[contains(@class, 'ant-select-item-option-content') and contains(., 'Colleague')] | //li[contains(text(), 'Colleague')] | //*[contains(text(), 'Colleague')])[last()]
-2026-07-03 09:27:12 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing '5551234567' in element By.id: phone0
-2026-07-03 09:27:12 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: phone0 to be visible (Timeout: 15s)
-2026-07-03 09:27:12 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'alok1@gmail.com' in element By.id: email0
-2026-07-03 09:27:12 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: email0 to be visible (Timeout: 15s)
-2026-07-03 09:27:13 [main] INFO  com.automation.pages.onboarding.ProfessionalReferencePage - Marking Reference 1 Mailing Address as not required...
-2026-07-03 09:27:13 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: mailingAddress0 to be visible (Timeout: 15s)
-2026-07-03 09:27:13 [main] INFO  com.automation.pages.onboarding.ProfessionalReferencePage - Scrolling down to Reference 2...
-2026-07-03 09:27:14 [main] INFO  com.automation.pages.onboarding.ProfessionalReferencePage - Filling Reference 2 Details: Name='Bob Reference Two', Title='Colleague', Phone='5557654321', Email='bob2@gmail.com'
-2026-07-03 09:27:14 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'Bob Reference Two' in element By.id: referenceName1
-2026-07-03 09:27:14 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: referenceName1 to be visible (Timeout: 15s)
-2026-07-03 09:27:15 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'Colleague' in element By.id: Title1
-2026-07-03 09:27:15 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: Title1 to be visible (Timeout: 15s)
-2026-07-03 09:27:15 [main] INFO  com.automation.pages.onboarding.ProfessionalReferencePage - Opening Specialty dropdown for Reference 2...
-2026-07-03 09:27:15 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: providerSpecialtySelectBox1 to be clickable (Timeout: 15s)
-2026-07-03 09:27:15 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.id: providerSpecialtySelectBox1
-2026-07-03 09:27:16 [main] INFO  com.automation.pages.onboarding.ProfessionalReferencePage - Selecting first specialty option for Reference 2...
-2026-07-03 09:27:16 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //angular2-multiselect[@id='providerSpecialtySelectBox1']//li[1] to be visible (Timeout: 15s)
-2026-07-03 09:27:17 [main] INFO  com.automation.pages.onboarding.ProfessionalReferencePage - Opening Relation dropdown for Reference 2...
-2026-07-03 09:27:17 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: (//nz-select[contains(@nzplaceholder, 'Relation') or @nzplaceholder='Select Relation'])[2] to be clickable (Timeout: 15s)
-2026-07-03 09:27:17 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: (//nz-select[contains(@nzplaceholder, 'Relation') or @nzplaceholder='Select Relation'])[2]
-2026-07-03 09:27:18 [main] INFO  com.automation.pages.onboarding.ProfessionalReferencePage - Selecting 'Colleague' option for Reference 2...
-2026-07-03 09:27:18 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: (//nz-option-item[contains(., 'Colleague')] | //*[contains(@class, 'ant-select-item-option-content') and contains(., 'Colleague')] | //li[contains(text(), 'Colleague')] | //*[contains(text(), 'Colleague')])[last()] to be clickable (Timeout: 15s)
-2026-07-03 09:27:19 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: (//nz-option-item[contains(., 'Colleague')] | //*[contains(@class, 'ant-select-item-option-content') and contains(., 'Colleague')] | //li[contains(text(), 'Colleague')] | //*[contains(text(), 'Colleague')])[last()]
-2026-07-03 09:27:19 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing '5557654321' in element By.id: phone1
-2026-07-03 09:27:19 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: phone1 to be visible (Timeout: 15s)
-2026-07-03 09:27:20 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'bob2@gmail.com' in element By.id: email1
-2026-07-03 09:27:20 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: email1 to be visible (Timeout: 15s)
-2026-07-03 09:27:20 [main] INFO  com.automation.pages.onboarding.ProfessionalReferencePage - Marking Reference 2 Mailing Address as not required...
-2026-07-03 09:27:20 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: mailingAddress1 to be visible (Timeout: 15s)
-2026-07-03 09:27:23 [main] INFO  com.automation.utils.ReportUtils - Clicking Professional Reference Save & Next...
-2026-07-03 09:27:23 [main] INFO  com.automation.pages.onboarding.ProfessionalReferencePage - Clicking Professional Reference Save & Next button...
-2026-07-03 09:27:23 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[@type='submit' and contains(., 'Save & Next')] to be clickable (Timeout: 15s)
-2026-07-03 09:27:23 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[@type='submit' and contains(., 'Save & Next')]
-2026-07-03 09:27:23 [main] INFO  com.automation.utils.ReportUtils - Waiting for Upload Documents page to load...
-2026-07-03 09:27:27 [main] INFO  com.automation.utils.ReportUtils - Saved page source for Upload Documents page to target/upload_documents.html
-2026-07-03 09:27:27 [main] INFO  com.automation.utils.ReportUtils - Saved screenshot to target/upload_documents.png
-2026-07-03 09:27:27 [main] INFO  com.automation.utils.ReportUtils - Selecting 'Not Applicable' for documents and clicking Save & Next...
-2026-07-03 09:27:27 [main] INFO  com.automation.pages.onboarding.UploadDocumentsPage - Selecting 'Not Applicable' for Document 1 (uploadNotApl0)...
-2026-07-03 09:27:27 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: uploadNotApl0 to be clickable (Timeout: 15s)
-2026-07-03 09:27:28 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.id: uploadNotApl0
-2026-07-03 09:27:29 [main] INFO  com.automation.pages.onboarding.UploadDocumentsPage - Selecting 'Not Applicable' for Document 2 (uploadNotApl1)...
-2026-07-03 09:27:29 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: uploadNotApl1 to be clickable (Timeout: 15s)
-2026-07-03 09:27:29 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.id: uploadNotApl1
-2026-07-03 09:27:30 [main] INFO  com.automation.pages.onboarding.UploadDocumentsPage - Clicking Documents Save & Next button (complete)...
-2026-07-03 09:27:30 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: complete to be clickable (Timeout: 15s)
-2026-07-03 09:27:30 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.id: complete
-2026-07-03 09:27:31 [main] INFO  com.automation.utils.ReportUtils - Waiting for Attestations page to load...
-2026-07-03 09:27:35 [main] INFO  com.automation.utils.ReportUtils - Saved page source for Attestations page to target/attestations.html
-2026-07-03 09:27:35 [main] INFO  com.automation.utils.ReportUtils - Saved screenshot of Attestations page to target/attestations.png
-2026-07-03 09:27:35 [main] INFO  com.automation.utils.ReportUtils - Filling Attestations (No to all) and clicking first Sign Now...
-2026-07-03 09:27:35 [main] INFO  com.automation.pages.onboarding.AttestationsPage - Clicking radio button No for question 0
-2026-07-03 09:27:35 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //label[@for='questionRadioBtn01'] to be visible (Timeout: 15s)
-2026-07-03 09:27:35 [main] INFO  com.automation.pages.onboarding.AttestationsPage - Clicking radio button No for question 1
-2026-07-03 09:27:35 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //label[@for='questionRadioBtn11'] to be visible (Timeout: 15s)
-2026-07-03 09:27:35 [main] INFO  com.automation.pages.onboarding.AttestationsPage - Clicking radio button No for question 2
-2026-07-03 09:27:35 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //label[@for='questionRadioBtn21'] to be visible (Timeout: 15s)
-2026-07-03 09:27:36 [main] INFO  com.automation.pages.onboarding.AttestationsPage - Clicking radio button No for question 3
-2026-07-03 09:27:36 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //label[@for='questionRadioBtn31'] to be visible (Timeout: 15s)
-2026-07-03 09:27:36 [main] INFO  com.automation.pages.onboarding.AttestationsPage - Clicking radio button No for question 4
-2026-07-03 09:27:36 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //label[@for='questionRadioBtn41'] to be visible (Timeout: 15s)
-2026-07-03 09:27:36 [main] INFO  com.automation.pages.onboarding.AttestationsPage - Clicking radio button No for question 5
-2026-07-03 09:27:36 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //label[@for='questionRadioBtn51'] to be visible (Timeout: 15s)
-2026-07-03 09:27:36 [main] INFO  com.automation.pages.onboarding.AttestationsPage - Clicking radio button No for question 6
-2026-07-03 09:27:36 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //label[@for='questionRadioBtn61'] to be visible (Timeout: 15s)
-2026-07-03 09:27:37 [main] INFO  com.automation.pages.onboarding.AttestationsPage - Clicking the first 'Sign Now' button...
-2026-07-03 09:27:37 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[contains(text(), 'Sign Now') and not(ancestor::docuseal-form)] to be clickable (Timeout: 15s)
-2026-07-03 09:27:37 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[contains(text(), 'Sign Now') and not(ancestor::docuseal-form)]
-2026-07-03 09:27:40 [main] INFO  com.automation.utils.ReportUtils - Saved page source for Sign Modal to target/sign_modal.html
-2026-07-03 09:27:40 [main] INFO  com.automation.utils.ReportUtils - Signing and saving Attestations step...
-2026-07-03 09:27:40 [main] INFO  com.automation.pages.onboarding.AttestationsPage - Clicking the second 'Sign Now' button inside Docuseal shadow DOM...
-2026-07-03 09:27:42 [main] INFO  com.automation.pages.onboarding.AttestationsPage - Clicking the 'Type' tab inside Docuseal shadow DOM...
-2026-07-03 09:27:44 [main] INFO  com.automation.pages.onboarding.AttestationsPage - Typing signature name: AutoFn88383 AutoLn88383
-2026-07-03 09:27:46 [main] INFO  com.automation.pages.onboarding.AttestationsPage - Clicking the 'Sign and Complete' button inside Docuseal shadow DOM...
-2026-07-03 09:27:50 [main] INFO  com.automation.pages.onboarding.AttestationsPage - Clicking the page's main 'Save' button...
-2026-07-03 09:27:50 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[normalize-space()='Save'] to be clickable (Timeout: 15s)
-2026-07-03 09:27:50 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[normalize-space()='Save']
-2026-07-03 09:27:54 [main] INFO  com.automation.pages.onboarding.AttestationsPage - Clicking the 'Submit Application' button...
-2026-07-03 09:27:54 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: complete to be clickable (Timeout: 15s)
-2026-07-03 09:27:54 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.id: complete
-2026-07-03 09:27:59 [main] INFO  com.automation.pages.onboarding.AttestationsPage - Checking for success modal...
-2026-07-03 09:27:59 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[contains(@class, 'success-btn') or normalize-space()='OK'] to be visible (Timeout: 5s)
-2026-07-03 09:28:04 [main] ERROR com.automation.utils.ElementUtils - Element By.xpath: //button[contains(@class, 'success-btn') or normalize-space()='OK'] was not visible within 5s
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //button[contains(@class, 'success-btn') or normalize-space()='OK'] (tried for 5 second(s) with 500 milliseconds interval)
+2026-07-03 13:09:38 [main] INFO  com.automation.utils.ReportUtils - Initializing ExtentReports...
+2026-07-03 13:09:38 [main] INFO  com.automation.tests.BaseTest - Test suite configuration initialized.
+2026-07-03 13:09:38 [main] INFO  com.automation.utils.ReportUtils - Started report test: 'testFailedLoginWithInvalidCredentials'
+2026-07-03 13:09:38 [main] INFO  com.automation.utils.ConfigReader - Configuration properties loaded successfully.
+2026-07-03 13:09:38 [main] INFO  com.automation.tests.BaseTest - Initializing browser: chrome
+2026-07-03 13:09:43 [main] INFO  com.automation.tests.BaseTest - Navigating to URL: http://mumbai.staging-provider-passport.s3-website.ap-south-1.amazonaws.com/#/auth/login
+2026-07-03 13:09:51 [main] INFO  com.automation.utils.ReportUtils - Running negative test case: Login with invalid credentials...
+2026-07-03 13:09:51 [main] INFO  com.automation.utils.ReportUtils - Attempting login with invalid email: invalid_user_5933@gmail.com and invalid password.
+2026-07-03 13:09:51 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[contains(., 'Password')] | //span[contains(text(), 'Password')] | //*[text()='Password'] to be clickable (Timeout: 15s)
+2026-07-03 13:09:51 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[contains(., 'Password')] | //span[contains(text(), 'Password')] | //*[text()='Password']
+2026-07-03 13:09:52 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'invalid_user_5933@gmail.com' in element By.xpath: //input[@type='email' or @placeholder='email@example.com' or contains(@placeholder, 'email')]
+2026-07-03 13:09:52 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //input[@type='email' or @placeholder='email@example.com' or contains(@placeholder, 'email')] to be visible (Timeout: 15s)
+2026-07-03 13:09:52 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'WrongPassword123!' in element By.xpath: //input[@type='password' or @placeholder='Enter Password' or contains(@placeholder, 'Password')]
+2026-07-03 13:09:52 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //input[@type='password' or @placeholder='Enter Password' or contains(@placeholder, 'Password')] to be visible (Timeout: 15s)
+2026-07-03 13:09:53 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[contains(., 'Sign In') or contains(., 'Sign in') or contains(@class, 'Sign')] to be clickable (Timeout: 15s)
+2026-07-03 13:09:53 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[contains(., 'Sign In') or contains(., 'Sign in') or contains(@class, 'Sign')]
+2026-07-03 13:09:53 [main] INFO  com.automation.utils.ReportUtils - Verifying error message is displayed on login page...
+2026-07-03 13:09:53 [main] INFO  com.automation.utils.ElementUtils - Checking visibility of element By.xpath: //div[contains(@class, 'error') or contains(@class, 'alert')] | //*[contains(text(), 'Invalid') or contains(text(), 'invalid') or contains(text(), 'failed') or contains(text(), 'incorrect') or contains(text(), 'user id')]
+2026-07-03 13:09:53 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //div[contains(@class, 'error') or contains(@class, 'alert')] | //*[contains(text(), 'Invalid') or contains(text(), 'invalid') or contains(text(), 'failed') or contains(text(), 'incorrect') or contains(text(), 'user id')] to be visible (Timeout: 15s)
+2026-07-03 13:09:54 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //div[contains(@class, 'error') or contains(@class, 'alert')] | //*[contains(text(), 'Invalid') or contains(text(), 'invalid') or contains(text(), 'failed') or contains(text(), 'incorrect') or contains(text(), 'user id')] to be visible (Timeout: 15s)
+2026-07-03 13:09:54 [main] INFO  com.automation.utils.ElementUtils - Retrieved text 'Invalid user id.' from element By.xpath: //div[contains(@class, 'error') or contains(@class, 'alert')] | //*[contains(text(), 'Invalid') or contains(text(), 'invalid') or contains(text(), 'failed') or contains(text(), 'incorrect') or contains(text(), 'user id')]
+2026-07-03 13:09:54 [main] INFO  com.automation.utils.ReportUtils - Actual error message displayed: 'Invalid user id.'
+2026-07-03 13:09:54 [main] INFO  com.automation.utils.ReportUtils - [PASS] Negative login test passed. Login failed as expected, and error message was correctly displayed: 'Invalid user id.'
+2026-07-03 13:09:54 [main] INFO  com.automation.tests.BaseTest - Test passed: testFailedLoginWithInvalidCredentials
+2026-07-03 13:09:54 [main] INFO  com.automation.utils.ReportUtils - [PASS] Test execution completed successfully.
+2026-07-03 13:09:54 [main] INFO  com.automation.tests.BaseTest - Closing browser session...
+2026-07-03 13:09:54 [main] INFO  com.automation.utils.ReportUtils - Started report test: 'testSuccessfulOnboarding'
+2026-07-03 13:09:54 [main] INFO  com.automation.tests.BaseTest - Initializing browser: chrome
+2026-07-03 13:09:56 [main] INFO  com.automation.tests.BaseTest - Navigating to URL: http://mumbai.staging-provider-passport.s3-website.ap-south-1.amazonaws.com/#/auth/login
+2026-07-03 13:10:00 [main] INFO  com.automation.utils.ReportUtils - Logging in with user: alokbind4733@gmail.com
+2026-07-03 13:10:00 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[contains(., 'Password')] | //span[contains(text(), 'Password')] | //*[text()='Password'] to be clickable (Timeout: 15s)
+2026-07-03 13:10:00 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[contains(., 'Password')] | //span[contains(text(), 'Password')] | //*[text()='Password']
+2026-07-03 13:10:01 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'alokbind4733@gmail.com' in element By.xpath: //input[@type='email' or @placeholder='email@example.com' or contains(@placeholder, 'email')]
+2026-07-03 13:10:01 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //input[@type='email' or @placeholder='email@example.com' or contains(@placeholder, 'email')] to be visible (Timeout: 15s)
+2026-07-03 13:10:01 [main] INFO  com.automation.utils.ElementUtils - Clearing and typing 'Test@Krenai' in element By.xpath: //input[@type='password' or @placeholder='Enter Password' or contains(@placeholder, 'Password')]
+2026-07-03 13:10:01 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //input[@type='password' or @placeholder='Enter Password' or contains(@placeholder, 'Password')] to be visible (Timeout: 15s)
+2026-07-03 13:10:01 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[contains(., 'Sign In') or contains(., 'Sign in') or contains(@class, 'Sign')] to be clickable (Timeout: 15s)
+2026-07-03 13:10:01 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[contains(., 'Sign In') or contains(., 'Sign in') or contains(@class, 'Sign')]
+2026-07-03 13:10:02 [main] INFO  com.automation.utils.ReportUtils - Verifying successful login...
+2026-07-03 13:10:02 [main] INFO  com.automation.utils.ElementUtils - Checking visibility of element By.xpath: //*[text()='Tasks to do'] | //*[text()='Provider Overview'] | //*[contains(text(), 'Alok Bind')]
+2026-07-03 13:10:02 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //*[text()='Tasks to do'] | //*[text()='Provider Overview'] | //*[contains(text(), 'Alok Bind')] to be visible (Timeout: 15s)
+2026-07-03 13:10:06 [main] INFO  com.automation.utils.ReportUtils - [PASS] Successfully logged in and reached the Dashboard.
+2026-07-03 13:10:06 [main] INFO  com.automation.utils.ReportUtils - Navigating to Staff -> Providers...
+2026-07-03 13:10:06 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //*[contains(text(), 'Staff')] to be clickable (Timeout: 15s)
+2026-07-03 13:10:07 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //*[contains(text(), 'Providers')] to be clickable (Timeout: 15s)
+2026-07-03 13:10:07 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //*[contains(text(), 'Providers')]
+2026-07-03 13:10:07 [main] INFO  com.automation.utils.ElementUtils - Checking visibility of element By.xpath: //*[contains(text(), 'Active Providers')]
+2026-07-03 13:10:07 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //*[contains(text(), 'Active Providers')] to be visible (Timeout: 15s)
+2026-07-03 13:10:12 [main] INFO  com.automation.utils.ReportUtils - [PASS] Navigated to Providers page.
+2026-07-03 13:10:12 [main] INFO  com.automation.pages.ProvidersPage - Checking if provider with NPI 1780658039 is in In Process list...
+2026-07-03 13:10:12 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.id: nav-process-tab to be clickable (Timeout: 5s)
+2026-07-03 13:10:12 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.id: nav-process-tab
+2026-07-03 13:10:22 [main] INFO  com.automation.pages.ProvidersPage - Found 4 total rows in In Process table
+2026-07-03 13:10:22 [main] INFO  com.automation.pages.ProvidersPage - Row 0: 
+2026-07-03 13:10:23 [main] INFO  com.automation.pages.ProvidersPage - Row 1: Provider Name | Title | NPI Number | Phone | Provider Email | Processed Date | Processed By | Onboarding Workflow | Actions
+2026-07-03 13:10:23 [main] INFO  com.automation.pages.ProvidersPage - Row 2: 
+2026-07-03 13:10:23 [main] INFO  com.automation.pages.ProvidersPage - Row 3: 
+2026-07-03 13:10:23 [main] INFO  com.automation.pages.ProvidersPage - Provider with NPI 1780658039 not found in In Process list.
+2026-07-03 13:10:23 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[contains(., 'Active Providers')] | //button[contains(text(), 'Active')] to be clickable (Timeout: 5s)
+2026-07-03 13:10:23 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[contains(., 'Active Providers')] | //button[contains(text(), 'Active')]
+2026-07-03 13:10:24 [main] INFO  com.automation.utils.ReportUtils - Selecting location: Dark Knight Oso Inc
+2026-07-03 13:10:24 [main] INFO  com.automation.utils.ElementUtils - Opening dropdown By.xpath: //*[contains(text(), 'Locations') or contains(text(), 'Knight') or contains(text(), 'Oso')] and selecting option containing 'Dark Knight Oso Inc'
+2026-07-03 13:10:24 [main] INFO  com.automation.utils.ElementUtils - Found 4 potential dropdown trigger elements matching By.xpath: //*[contains(text(), 'Locations') or contains(text(), 'Knight') or contains(text(), 'Oso')]
+2026-07-03 13:10:24 [main] INFO  com.automation.utils.ElementUtils - Trigger [0]: Tag='span', Text='All Locations', Class='LctnSelection', Displayed=true
+2026-07-03 13:10:24 [main] INFO  com.automation.utils.ElementUtils - Trigger [1]: Tag='h1', Text='', Class='modal-title', Displayed=false
+2026-07-03 13:10:24 [main] INFO  com.automation.utils.ElementUtils - Trigger [2]: Tag='button', Text='', Class='invite-btn active', Displayed=false
+2026-07-03 13:10:24 [main] INFO  com.automation.utils.ElementUtils - Trigger [3]: Tag='button', Text='', Class='invite-btn', Displayed=false
+2026-07-03 13:10:24 [main] INFO  com.automation.utils.ElementUtils - Attempt 1 to click dropdown trigger...
+2026-07-03 13:10:24 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //*[contains(text(), 'Locations') or contains(text(), 'Knight') or contains(text(), 'Oso')] to be clickable (Timeout: 5s)
+2026-07-03 13:10:24 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //*[contains(text(), 'Locations') or contains(text(), 'Knight') or contains(text(), 'Oso')]
+2026-07-03 13:10:25 [main] INFO  com.automation.utils.ElementUtils - Dropdown opened successfully. Option is now visible.
+2026-07-03 13:10:25 [main] INFO  com.automation.utils.ElementUtils - Found 1 option elements matching By.xpath: //*[contains(text(), 'Dark Knight Oso Inc')] (Attempt 1)
+2026-07-03 13:10:25 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Dark Knight Oso Inc', Displayed=true
+2026-07-03 13:10:25 [main] INFO  com.automation.utils.ElementUtils - Clicking option containing 'Dark Knight Oso Inc'
+2026-07-03 13:10:25 [main] INFO  com.automation.pages.ProvidersPage - Waiting for location dropdown trigger text to update to 'Dark Knight Oso Inc'...
+2026-07-03 13:10:25 [main] INFO  com.automation.pages.ProvidersPage - Location successfully selected and trigger text updated.
+2026-07-03 13:10:25 [main] INFO  com.automation.utils.ReportUtils - [PASS] Location selected successfully.
+2026-07-03 13:10:25 [main] INFO  com.automation.utils.ReportUtils - Clicking + Add Provider...
+2026-07-03 13:10:25 [main] INFO  com.automation.pages.ProvidersPage - Attempt 1 to click + Add Provider button...
+2026-07-03 13:10:25 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[contains(., 'Add Provider')] | //span[contains(text(), 'Add Provider')] | //*[contains(text(), 'Add Provider') and contains(@class, 'button')] to be clickable (Timeout: 5s)
+2026-07-03 13:10:26 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[contains(., 'Add Provider')] | //span[contains(text(), 'Add Provider')] | //*[contains(text(), 'Add Provider') and contains(@class, 'button')]
+2026-07-03 13:10:29 [main] WARN  com.automation.pages.ProvidersPage - Modal did not open on attempt 1. Retrying click...
+2026-07-03 13:10:29 [main] INFO  com.automation.pages.ProvidersPage - Attempt 2 to click + Add Provider button...
+2026-07-03 13:10:29 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[contains(., 'Add Provider')] | //span[contains(text(), 'Add Provider')] | //*[contains(text(), 'Add Provider') and contains(@class, 'button')] to be clickable (Timeout: 5s)
+2026-07-03 13:10:29 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[contains(., 'Add Provider')] | //span[contains(text(), 'Add Provider')] | //*[contains(text(), 'Add Provider') and contains(@class, 'button')]
+2026-07-03 13:10:31 [main] INFO  com.automation.pages.ProvidersPage - Add Provider modal opened successfully.
+2026-07-03 13:10:31 [main] INFO  com.automation.utils.ReportUtils - Selecting onboarding workflow: Complete_Test_Onboarding_Workflow
+2026-07-03 13:10:31 [main] INFO  com.automation.utils.ElementUtils - Opening dropdown By.xpath: //*[contains(text(), 'Select Onboarding Workflow')]/following::div[@class='selected-list'][1] | //div[@class='selected-list'] and selecting option containing 'Complete_Test_Onboarding_Workflow'
+2026-07-03 13:10:31 [main] INFO  com.automation.utils.ElementUtils - Found 2 potential dropdown trigger elements matching By.xpath: //*[contains(text(), 'Select Onboarding Workflow')]/following::div[@class='selected-list'][1] | //div[@class='selected-list']
+2026-07-03 13:10:31 [main] INFO  com.automation.utils.ElementUtils - Trigger [0]: Tag='div', Text='test flow F', Class='selected-list', Displayed=true
+2026-07-03 13:10:31 [main] INFO  com.automation.utils.ElementUtils - Trigger [1]: Tag='div', Text='', Class='selected-list', Displayed=false
+2026-07-03 13:10:31 [main] INFO  com.automation.utils.ElementUtils - Attempt 1 to click dropdown trigger...
+2026-07-03 13:10:31 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //*[contains(text(), 'Select Onboarding Workflow')]/following::div[@class='selected-list'][1] | //div[@class='selected-list'] to be clickable (Timeout: 5s)
+2026-07-03 13:10:31 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //*[contains(text(), 'Select Onboarding Workflow')]/following::div[@class='selected-list'][1] | //div[@class='selected-list']
+2026-07-03 13:10:31 [main] INFO  com.automation.utils.ElementUtils - Dropdown opened successfully. Option is now visible.
+2026-07-03 13:10:31 [main] INFO  com.automation.utils.ElementUtils - Found 1 option elements matching By.xpath: //*[contains(text(), 'Complete_Test_Onboarding_Workflow')] (Attempt 1)
+2026-07-03 13:10:31 [main] INFO  com.automation.utils.ElementUtils - Checking option: Text='Complete_Test_Onboarding_Workflow', Displayed=true
+2026-07-03 13:10:31 [main] INFO  com.automation.utils.ElementUtils - Clicking option containing 'Complete_Test_Onboarding_Workflow'
+2026-07-03 13:10:31 [main] INFO  com.automation.pages.AddProviderModal - Clicking workflow dropdown trigger again to close the overlay options list...
+2026-07-03 13:10:31 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //*[contains(text(), 'Select Onboarding Workflow')]/following::div[@class='selected-list'][1] | //div[@class='selected-list'] to be clickable (Timeout: 5s)
+2026-07-03 13:10:31 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //*[contains(text(), 'Select Onboarding Workflow')]/following::div[@class='selected-list'][1] | //div[@class='selected-list']
+2026-07-03 13:10:32 [main] INFO  com.automation.utils.ReportUtils - Selecting 'Add Provider' option...
+2026-07-03 13:10:32 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //div[contains(@class, 'modal')]//*[text()='Add Provider']/parent::div | //div[contains(@class, 'modal')]//*[text()='Add Provider'] | //div[contains(@class, 'modal')]//p[text()='Add Provider'] to be visible (Timeout: 15s)
+2026-07-03 13:10:32 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //div[contains(@class, 'modal')]//*[text()='Add Provider']/parent::div | //div[contains(@class, 'modal')]//*[text()='Add Provider'] | //div[contains(@class, 'modal')]//p[text()='Add Provider'] using JavaScript
+2026-07-03 13:10:32 [main] INFO  com.automation.utils.ReportUtils - Clicking Next...
+2026-07-03 13:10:32 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //button[contains(., 'Next')] | //span[contains(text(), 'Next')] | //button[contains(text(), 'Next')] to be clickable (Timeout: 15s)
+2026-07-03 13:10:32 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //button[contains(., 'Next')] | //span[contains(text(), 'Next')] | //button[contains(text(), 'Next')]
+2026-07-03 13:10:32 [main] INFO  com.automation.utils.ReportUtils - [PASS] Successfully configured workflow and moved to details step.
+2026-07-03 13:10:32 [main] INFO  com.automation.utils.ReportUtils - Selecting first privilege option...
+2026-07-03 13:10:32 [main] INFO  com.automation.pages.AddProviderModal - Opening Privileges dropdown and selecting option containing 'Allergy'...
+2026-07-03 13:10:32 [main] INFO  com.automation.pages.AddProviderModal - Attempt 1 to click privileges dropdown...
+2026-07-03 13:10:32 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //*[contains(text(), 'Privileges') or contains(text(), 'privilege')]/following::div[contains(@class, 'selected-list')][1] to be clickable (Timeout: 5s)
+2026-07-03 13:10:32 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //*[contains(text(), 'Privileges') or contains(text(), 'privilege')]/following::div[contains(@class, 'selected-list')][1]
+2026-07-03 13:10:36 [main] WARN  com.automation.pages.AddProviderModal - Target option not visible after click attempt 1. Retrying click...
+2026-07-03 13:10:36 [main] INFO  com.automation.pages.AddProviderModal - Attempt 2 to click privileges dropdown...
+2026-07-03 13:10:36 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //*[contains(text(), 'Privileges') or contains(text(), 'privilege')]/following::div[contains(@class, 'selected-list')][1] to be clickable (Timeout: 5s)
+2026-07-03 13:10:36 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //*[contains(text(), 'Privileges') or contains(text(), 'privilege')]/following::div[contains(@class, 'selected-list')][1]
+2026-07-03 13:10:36 [main] INFO  com.automation.pages.AddProviderModal - Privileges dropdown opened and target option is visible.
+2026-07-03 13:10:36 [main] INFO  com.automation.pages.AddProviderModal - Selecting option containing 'Allergy': 'Allergy/Immunology Clinical Privileges'
+2026-07-03 13:10:36 [main] INFO  com.automation.pages.AddProviderModal - Clicking privileges dropdown trigger again to close the overlay options list...
+2026-07-03 13:10:36 [main] INFO  com.automation.utils.ElementUtils - Waiting for element By.xpath: //*[contains(text(), 'Privileges') or contains(text(), 'privilege')]/following::div[contains(@class, 'selected-list')][1] to be clickable (Timeout: 5s)
+2026-07-03 13:10:36 [main] INFO  com.automation.utils.ElementUtils - Clicking on element By.xpath: //*[contains(text(), 'Privileges') or contains(text(), 'privilege')]/following::div[contains(@class, 'selected-list')][1]
+2026-07-03 13:10:37 [main] INFO  com.automation.pages.AddProviderModal - Privileges dropdown overlay closed successfully.
+2026-07-03 13:10:37 [main] INFO  com.automation.utils.ReportUtils - Entering Provider Details. NPI: 1780658039, First Name: AutoFn28598, Last Name: AutoLn28598
+2026-07-03 13:10:37 [main] INFO  com.automation.pages.AddProviderModal - Typing NPI: 1780658039
+2026-07-03 13:10:37 [main] INFO  com.automation.pages.AddProviderModal - Successfully typed '1780658039' in visible element By.xpath: //input[@name='npi' or contains(@placeholder, 'NPI') or @id='npi' or contains(@name, 'npi')]
+2026-07-03 13:10:37 [main] INFO  com.automation.pages.AddProviderModal - Waiting for NPPES auto-fill lookup to populate names...
+2026-07-03 13:10:42 [main] INFO  com.automation.pages.AddProviderModal - NPPES lookup did not auto-fill names. Typing manually: 'AutoFn28598', 'AutoLn28598'
+2026-07-03 13:10:42 [main] INFO  com.automation.pages.AddProviderModal - Successfully typed 'AutoFn28598' in visible element By.xpath: //input[@name='firstName' or contains(@placeholder, 'First Name') or @id='firstName' or contains(@name, 'first')]
+2026-07-03 13:10:42 [main] INFO  com.automation.pages.AddProviderModal - Successfully typed 'AutoLn28598' in visible element By.xpath: //input[@name='lastName' or contains(@placeholder, 'Last Name') or @id='lastName' or contains(@name, 'last')]
+2026-07-03 13:10:42 [main] INFO  com.automation.utils.ReportUtils - Submitting Provider Onboarding request for NPI: 1780658039
+2026-07-03 13:10:42 [main] INFO  com.automation.pages.AddProviderModal - Waiting for Add button to be clickable...
+2026-07-03 13:10:48 [main] WARN  com.automation.pages.AddProviderModal - Add button not clickable after wait. Performing JS click fallback: Expected condition failed: waiting for element to be clickable: By.xpath: //div[contains(@class, 'modal') and contains(@class, 'show')]//button[text()='ADD' or contains(text(), 'ADD') or contains(., 'ADD') or contains(text(), 'Add')] (tried for 5 second(s) with 500 milliseconds interval)
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.201, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52326}, goog:processID: 2164, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52326/devtoo..., se:cdpVersion: 149.0.7827.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3648425dbb76ab12e2d64fdaba8787ab
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84) ~[selenium-support-4.18.1.jar:?]
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.18.1.jar:?]
-	at com.automation.utils.ElementUtils.waitForElementToBeVisible(ElementUtils.java:26) ~[classes/:?]
-	at com.automation.pages.onboarding.AttestationsPage.signAndSaveAttestations(AttestationsPage.java:127) ~[classes/:?]
-	at com.automation.tests.OnboardingTest.testSuccessfulOnboarding(OnboardingTest.java:334) ~[test-classes/:?]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.201, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52436}, goog:processID: 13892, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52436/devtoo..., se:cdpVersion: 149.0.7827.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bed163ee433cca87420c0d09ca0ecee6
+2026-07-03 13:10:51 [main] ERROR com.automation.tests.BaseTest - Test failed: testSuccessfulOnboarding
+2026-07-03 13:10:51 [main] INFO  com.automation.utils.ReportUtils - Screenshot captured and saved to: C:\Users\USER\Downloads\Automation-Testing-Assignment/screenshots/testSuccessfulOnboarding_20260703_131051.png
+2026-07-03 13:10:51 [main] ERROR com.automation.utils.ReportUtils - [FAIL] Failed to submit onboarding request or open a new tab with NPI: 1780658039 expected [true] but found [false]
+java.lang.AssertionError: Failed to submit onboarding request or open a new tab with NPI: 1780658039 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.Assert.failNotEquals(Assert.java:1578) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.Assert.assertTrue(Assert.java:57) ~[testng-7.9.0.jar:7.9.0]
+	at com.automation.tests.OnboardingTest.testSuccessfulOnboarding(OnboardingTest.java:92) ~[test-classes/:?]
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.9.0.jar:7.9.0]
@@ -1208,15 +174,6 @@ Session ID: 3648425dbb76ab12e2d64fdaba8787ab
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
-2026-07-03 09:28:04 [main] INFO  com.automation.pages.onboarding.AttestationsPage - No success modal or failed to click OK: Expected condition failed: waiting for visibility of element located by By.xpath: //button[contains(@class, 'success-btn') or normalize-space()='OK'] (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.201, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52326}, goog:processID: 2164, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52326/devtoo..., se:cdpVersion: 149.0.7827.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3648425dbb76ab12e2d64fdaba8787ab
-2026-07-03 09:28:04 [main] INFO  com.automation.utils.ReportUtils - [PASS] Provider Onboarding workflow, form details, and document selections completed and submitted successfully.
-2026-07-03 09:28:04 [main] INFO  com.automation.tests.BaseTest - Test passed: testSuccessfulOnboarding
-2026-07-03 09:28:04 [main] INFO  com.automation.utils.ReportUtils - [PASS] Test execution completed successfully.
-2026-07-03 09:28:04 [main] INFO  com.automation.tests.BaseTest - Closing browser session...
-2026-07-03 09:28:05 [main] INFO  com.automation.utils.ReportUtils - Flushing ExtentReports...
-2026-07-03 09:28:06 [main] INFO  com.automation.tests.BaseTest - Test suite reporting flushed and complete.
+2026-07-03 13:10:51 [main] INFO  com.automation.tests.BaseTest - Closing browser session...
+2026-07-03 13:10:51 [main] INFO  com.automation.utils.ReportUtils - Flushing ExtentReports...
+2026-07-03 13:10:52 [main] INFO  com.automation.tests.BaseTest - Test suite reporting flushed and complete.
