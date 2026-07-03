@@ -7,7 +7,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import java.time.Duration;
 import java.util.List;
 
 public class PersonalInformationPage extends BasePage {
@@ -36,10 +35,12 @@ public class PersonalInformationPage extends BasePage {
         return elementUtils.isDisplayed(ssnInput, timeout);
     }
 
-    public void fillBasicInformation(String ssn, String email, String dob, String phone, String gender, String boardName) {
+    public void fillBasicInformation(String ssn, String email, String dob, String phone, String gender,
+            String boardName) {
         int timeout = Integer.parseInt(ConfigReader.getProperty("timeout"));
 
-        logger.info("Filling Basic Information form: SSN='{}', Email='{}', DOB='{}', Phone='{}', Gender='{}'", ssn, email, dob, phone, gender);
+        logger.info("Filling Basic Information form: SSN='{}', Email='{}', DOB='{}', Phone='{}', Gender='{}'", ssn,
+                email, dob, phone, gender);
         elementUtils.sendKeys(ssnInput, ssn, timeout);
         elementUtils.sendKeys(emailInput, email, timeout);
         elementUtils.sendKeys(dobInput, dob, timeout);
@@ -95,8 +96,10 @@ public class PersonalInformationPage extends BasePage {
                 String currentText = stateDropdowns.get(i).getText().trim();
                 logger.info("Taxonomy state index {} text: '{}'", i, currentText);
                 if (currentText.toLowerCase().contains("select state") || currentText.isEmpty()) {
-                    By specificDropdown = By.xpath("(//angular2-multiselect[@name='updateStateName'])[" + (i + 1) + "]");
-                    By specificOptions = By.xpath("(//angular2-multiselect[@name='updateStateName'])[" + (i + 1) + "]//li");
+                    By specificDropdown = By
+                            .xpath("(//angular2-multiselect[@name='updateStateName'])[" + (i + 1) + "]");
+                    By specificOptions = By
+                            .xpath("(//angular2-multiselect[@name='updateStateName'])[" + (i + 1) + "]//li");
                     logger.info("Selecting State 'California' for empty taxonomy state at index {}", i);
                     elementUtils.selectFromCustomDropdown(specificDropdown, specificOptions, "California", timeout);
                 }
