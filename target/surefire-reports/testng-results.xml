@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-07-03T09:23:46 IST" name="Provider Passport Suite" finished-at="2026-07-03T09:28:05 IST" duration-ms="259157">
+    <groups>
+    </groups>
+    <test started-at="2026-07-03T09:23:46 IST" name="Onboarding Workflows" finished-at="2026-07-03T09:28:05 IST" duration-ms="259157">
+      <class name="com.automation.tests.OnboardingTest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.automation.tests.OnboardingTest@736caf7a]" started-at="2026-07-03T09:23:45 IST" name="setupSuite" finished-at="2026-07-03T09:23:46 IST" duration-ms="498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.automation.tests.OnboardingTest@736caf7a]" started-at="2026-07-03T09:23:46 IST" name="setupTest" finished-at="2026-07-03T09:23:50 IST" duration-ms="4297" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automation.tests.OnboardingTest.testFailedLoginWithInvalidCredentials()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="testFailedLoginWithInvalidCredentials()[pri:0, instance:com.automation.tests.OnboardingTest@736caf7a]" started-at="2026-07-03T09:23:50 IST" name="testFailedLoginWithInvalidCredentials" finished-at="2026-07-03T09:23:59 IST" duration-ms="9033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFailedLoginWithInvalidCredentials -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:com.automation.tests.OnboardingTest@736caf7a]" started-at="2026-07-03T09:23:59 IST" name="tearDownTest" finished-at="2026-07-03T09:23:59 IST" duration-ms="265" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testFailedLoginWithInvalidCredentials status=SUCCESS method=OnboardingTest.testFailedLoginWithInvalidCredentials()[pri:0, instance:com.automation.tests.OnboardingTest@736caf7a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.automation.tests.OnboardingTest@736caf7a]" started-at="2026-07-03T09:23:59 IST" name="setupTest" finished-at="2026-07-03T09:24:08 IST" duration-ms="8504" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automation.tests.OnboardingTest.testSuccessfulOnboarding() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="testSuccessfulOnboarding()[pri:0, instance:com.automation.tests.OnboardingTest@736caf7a]" started-at="2026-07-03T09:24:08 IST" name="testSuccessfulOnboarding" finished-at="2026-07-03T09:28:04 IST" duration-ms="236368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulOnboarding -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:com.automation.tests.OnboardingTest@736caf7a]" started-at="2026-07-03T09:28:04 IST" name="tearDownTest" finished-at="2026-07-03T09:28:05 IST" duration-ms="619" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSuccessfulOnboarding status=SUCCESS method=OnboardingTest.testSuccessfulOnboarding()[pri:0, instance:com.automation.tests.OnboardingTest@736caf7a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:com.automation.tests.OnboardingTest@736caf7a]" started-at="2026-07-03T09:28:05 IST" name="tearDownSuite" finished-at="2026-07-03T09:28:06 IST" duration-ms="866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+      </class> <!-- com.automation.tests.OnboardingTest -->
+    </test> <!-- Onboarding Workflows -->
+  </suite> <!-- Provider Passport Suite -->
+</testng-results>
