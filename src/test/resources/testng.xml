@@ -3,6 +3,7 @@
 <suite name="Provider Passport Suite">
     <test name="Onboarding Workflows">
         <classes>
+            <class name="com.automation.tests.LoginTest" />
             <class name="com.automation.tests.OnboardingTest" />
         </classes>
     </test>

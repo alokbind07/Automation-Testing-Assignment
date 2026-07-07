@@ -1,2 +1,3 @@
-com\automation\tests\OnboardingTest.class
 com\automation\tests\BaseTest.class
+com\automation\tests\LoginTest.class
+com\automation\tests\OnboardingTest.class

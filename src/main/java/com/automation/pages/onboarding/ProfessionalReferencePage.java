@@ -44,7 +44,7 @@ public class ProfessionalReferencePage extends BasePage {
             Thread.sleep(1000);
             logger.info("Selecting first specialty option for Reference 1...");
             WebElement specOption = elementUtils.waitForElementToBeVisible(By.xpath("//angular2-multiselect[@id='providerSpecialtySelectBox0']//li[1]"), timeout);
-            specOption.click();
+            elementUtils.clickElement(specOption);
             Thread.sleep(500);
         } catch (Exception e) {
             logger.warn("Failed to select Specialty dropdown option for Reference 1: {}", e.getMessage());
@@ -98,7 +98,7 @@ public class ProfessionalReferencePage extends BasePage {
             Thread.sleep(1000);
             logger.info("Selecting first specialty option for Reference 2...");
             WebElement specOption = elementUtils.waitForElementToBeVisible(By.xpath("//angular2-multiselect[@id='providerSpecialtySelectBox1']//li[1]"), timeout);
-            specOption.click();
+            elementUtils.clickElement(specOption);
             Thread.sleep(500);
         } catch (Exception e) {
             logger.warn("Failed to select Specialty dropdown option for Reference 2: {}", e.getMessage());

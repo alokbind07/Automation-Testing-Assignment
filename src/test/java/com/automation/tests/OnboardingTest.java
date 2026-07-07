@@ -333,29 +333,4 @@ public class OnboardingTest extends BaseTest {
         ReportUtils.logPass(
                 "Provider Onboarding workflow, form details, and document selections completed and submitted successfully.");
     }
-
-    @Test
-    public void testFailedLoginWithInvalidCredentials() {
-        ReportUtils.logInfo("Running negative test case: Login with invalid credentials...");
-        LoginPage loginPage = new LoginPage(driver);
-
-        String invalidEmail = "invalid_user_" + new Random().nextInt(10000) + "@gmail.com";
-        String invalidPassword = "WrongPassword123!";
-
-        ReportUtils.logInfo("Attempting login with invalid email: " + invalidEmail + " and invalid password.");
-        loginPage.login(invalidEmail, invalidPassword);
-
-        ReportUtils.logInfo("Verifying error message is displayed on login page...");
-        Assert.assertTrue(loginPage.isErrorMessageDisplayed(),
-                "Error message was not displayed for invalid login credentials!");
-
-        String actualError = loginPage.getErrorMessageText();
-        ReportUtils.logInfo("Actual error message displayed: '" + actualError + "'");
-        Assert.assertNotNull(actualError, "Error message text is null!");
-        Assert.assertFalse(actualError.trim().isEmpty(), "Error message text is empty!");
-
-        ReportUtils.logPass(
-                "Negative login test passed. Login failed as expected, and error message was correctly displayed: '"
-                        + actualError + "'");
-    }
 }

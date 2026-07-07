@@ -18,7 +18,7 @@ public class AttestationsPage extends BasePage {
 
     public void fillAttestationsAndOpenSignature() {
         int timeout = Integer.parseInt(ConfigReader.getProperty("timeout"));
-        
+
         // Click all "No" radio buttons dynamically
         int index = 0;
         while (true) {
@@ -39,7 +39,7 @@ public class AttestationsPage extends BasePage {
                 break;
             }
         }
-        
+
         // Click "Sign Now" button
         try {
             logger.info("Clicking the first 'Sign Now' button...");
@@ -53,29 +53,27 @@ public class AttestationsPage extends BasePage {
 
     public void signAndSaveAttestations(String signatureName) {
         int timeout = Integer.parseInt(ConfigReader.getProperty("timeout"));
-        
+
         // 2. Click the second "Sign Now" button inside Docuseal shadow DOM via JS
         try {
             logger.info("Clicking the second 'Sign Now' button inside Docuseal shadow DOM...");
             ((org.openqa.selenium.JavascriptExecutor) driver).executeScript(
-                "document.querySelector('docuseal-form').shadowRoot.querySelector('#expand_form_button').click();"
-            );
+                    "document.querySelector('docuseal-form').shadowRoot.querySelector('#expand_form_button').click();");
             Thread.sleep(2000);
         } catch (Exception e) {
             logger.error("Failed to click Docuseal #expand_form_button: {}", e.getMessage());
         }
-        
+
         // 3. Click "Type" button inside Docuseal shadow DOM via JS
         try {
             logger.info("Clicking the 'Type' tab inside Docuseal shadow DOM...");
             ((org.openqa.selenium.JavascriptExecutor) driver).executeScript(
-                "document.querySelector('docuseal-form').shadowRoot.querySelector('#type_text_button').click();"
-            );
+                    "document.querySelector('docuseal-form').shadowRoot.querySelector('#type_text_button').click();");
             Thread.sleep(2000);
         } catch (Exception e) {
             logger.error("Failed to click Docuseal #type_text_button: {}", e.getMessage());
         }
-        
+
         // 4. Type the signature name
         try {
             logger.info("Typing signature name: {}", signatureName);
@@ -88,18 +86,17 @@ public class AttestationsPage extends BasePage {
         } catch (Exception e) {
             logger.error("Failed to type signature inside Docuseal: {}", e.getMessage());
         }
-        
+
         // 5. Click "Sign and Complete" button inside Docuseal shadow DOM via JS
         try {
             logger.info("Clicking the 'Sign and Complete' button inside Docuseal shadow DOM...");
             ((org.openqa.selenium.JavascriptExecutor) driver).executeScript(
-                "document.querySelector('docuseal-form').shadowRoot.querySelector('#submit_form_button').click();"
-            );
+                    "document.querySelector('docuseal-form').shadowRoot.querySelector('#submit_form_button').click();");
             Thread.sleep(4000);
         } catch (Exception e) {
             logger.error("Failed to click Docuseal #submit_form_button: {}", e.getMessage());
         }
-        
+
         // 6. Click the page's main "Save" button
         try {
             logger.info("Clicking the page's main 'Save' button...");
@@ -117,7 +114,8 @@ public class AttestationsPage extends BasePage {
             elementUtils.click(submitButton, timeout);
             Thread.sleep(5000);
         } catch (Exception e) {
-            logger.error("Failed to click 'Submit Application' button: {}", e.getMessage());
+            logger.error("Failed to click 'Submit Application' button: {}",
+                    e.getMessage());
         }
 
         // 8. Click the success modal "OK" button if it appears

@@ -4,6 +4,7 @@ import com.automation.base.BasePage;
 import com.automation.utils.ConfigReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class LoginPage extends BasePage {
 
@@ -51,12 +52,42 @@ public class LoginPage extends BasePage {
     }
 
     public boolean isErrorMessageDisplayed() {
-        int timeout = Integer.parseInt(ConfigReader.getProperty("timeout"));
-        return elementUtils.isDisplayed(errorMessage, timeout);
+        if (elementUtils.isDisplayed(errorMessage, 2)) {
+            return true;
+        }
+        try {
+            WebElement email = driver.findElement(emailInput);
+            WebElement password = driver.findElement(passwordInput);
+            String emailMsg = (String) ((org.openqa.selenium.JavascriptExecutor) driver).executeScript("return arguments[0].validationMessage;", email);
+            String passwordMsg = (String) ((org.openqa.selenium.JavascriptExecutor) driver).executeScript("return arguments[0].validationMessage;", password);
+            if ((emailMsg != null && !emailMsg.isEmpty()) || (passwordMsg != null && !passwordMsg.isEmpty())) {
+                return true;
+            }
+        } catch (Exception e) {
+            // ignore
+        }
+        return false;
     }
 
     public String getErrorMessageText() {
         int timeout = Integer.parseInt(ConfigReader.getProperty("timeout"));
-        return elementUtils.getText(errorMessage, timeout);
+        if (elementUtils.isDisplayed(errorMessage, 2)) {
+            return elementUtils.getText(errorMessage, timeout);
+        }
+        try {
+            WebElement email = driver.findElement(emailInput);
+            WebElement password = driver.findElement(passwordInput);
+            String emailMsg = (String) ((org.openqa.selenium.JavascriptExecutor) driver).executeScript("return arguments[0].validationMessage;", email);
+            if (emailMsg != null && !emailMsg.isEmpty()) {
+                return emailMsg;
+            }
+            String passwordMsg = (String) ((org.openqa.selenium.JavascriptExecutor) driver).executeScript("return arguments[0].validationMessage;", password);
+            if (passwordMsg != null && !passwordMsg.isEmpty()) {
+                return passwordMsg;
+            }
+        } catch (Exception e) {
+            // ignore
+        }
+        return "";
     }
 }

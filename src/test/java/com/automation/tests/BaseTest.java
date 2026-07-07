@@ -39,26 +39,59 @@ public class BaseTest {
         String browser = ConfigReader.getProperty("browser").toLowerCase();
         int timeout = Integer.parseInt(ConfigReader.getProperty("timeout"));
         
-        logger.info("Initializing browser: {}", browser);
+        String headlessProp = System.getProperty("headless");
+        if (headlessProp == null) {
+            headlessProp = ConfigReader.getProperty("headless");
+        }
+        boolean headless = "true".equalsIgnoreCase(headlessProp);
+        
+        logger.info("Initializing browser: {} (Headless: {})", browser, headless);
         switch (browser) {
             case "chrome" -> {
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--start-maximized");
                 options.addArguments("--disable-notifications");
                 options.addArguments("--disable-popup-blocking");
-                // Run in headless mode if needed:
-                // options.addArguments("--headless=new");
+                if (headless) {
+                    options.addArguments("--headless=new");
+                    options.addArguments("--window-size=1920,1080");
+                    options.addArguments("--disable-gpu");
+                }
                 driver = new ChromeDriver(options);
+                if (!headless) {
+                    driver.manage().window().maximize();
+                } else {
+                    driver.manage().window().setSize(new org.openqa.selenium.Dimension(1920, 1080));
+                }
             }
             case "firefox" -> {
                 FirefoxOptions options = new FirefoxOptions();
+                if (headless) {
+                    options.addArguments("-headless");
+                    options.addArguments("--width=1920");
+                    options.addArguments("--height=1080");
+                }
                 driver = new FirefoxDriver(options);
-                driver.manage().window().maximize();
+                if (!headless) {
+                    driver.manage().window().maximize();
+                } else {
+                    driver.manage().window().setSize(new org.openqa.selenium.Dimension(1920, 1080));
+                }
             }
             case "edge" -> {
                 EdgeOptions options = new EdgeOptions();
                 options.addArguments("--start-maximized");
+                if (headless) {
+                    options.addArguments("--headless=new");
+                    options.addArguments("--window-size=1920,1080");
+                    options.addArguments("--disable-gpu");
+                }
                 driver = new EdgeDriver(options);
+                if (!headless) {
+                    driver.manage().window().maximize();
+                } else {
+                    driver.manage().window().setSize(new org.openqa.selenium.Dimension(1920, 1080));
+                }
             }
             default -> {
                 logger.error("Unsupported browser type in config: {}", browser);
