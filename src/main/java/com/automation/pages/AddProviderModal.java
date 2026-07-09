@@ -40,11 +40,11 @@ public class AddProviderModal extends BasePage {
 
     // Form inputs
     private final By npiInput = By
-            .xpath("//input[@name='npi' or contains(@placeholder, 'NPI') or @id='npi' or contains(@name, 'npi')]");
+            .xpath("//div[contains(@class, 'modal')]//input[@name='npi' or contains(@placeholder, 'NPI') or @id='npi' or contains(@name, 'npi')] | //input[@name='npi' or contains(@placeholder, 'NPI') or @id='npi' or contains(@name, 'npi')]");
     private final By firstNameInput = By.xpath(
-            "//input[@name='firstName' or contains(@placeholder, 'First Name') or @id='firstName' or contains(@name, 'first')]");
+            "//div[contains(@class, 'modal')]//input[@name='firstName' or contains(@placeholder, 'First Name') or @id='firstName' or contains(@name, 'first')] | //input[@name='firstName' or contains(@placeholder, 'First Name') or @id='firstName' or contains(@name, 'first')]");
     private final By lastNameInput = By.xpath(
-            "//input[@name='lastName' or contains(@placeholder, 'Last Name') or @id='lastName' or contains(@name, 'last')]");
+            "//div[contains(@class, 'modal')]//input[@name='lastName' or contains(@placeholder, 'Last Name') or @id='lastName' or contains(@name, 'last')] | //input[@name='lastName' or contains(@placeholder, 'Last Name') or @id='lastName' or contains(@name, 'last')]");
 
     // Add button to finish the onboarding creation
     private final By addButton = By.xpath(
@@ -134,18 +134,33 @@ public class AddProviderModal extends BasePage {
         logger.info("Selecting option containing '{}': '{}'", privilegeName, option.getText());
         elementUtils.clickElement(option);
 
-        // Toggle the privileges dropdown trigger again to close the overlay options
-        // list
+        // Toggle the privileges dropdown trigger again to close the overlay options list if it's still open
+        boolean isOverlayVisible = false;
         try {
-            logger.info("Clicking privileges dropdown trigger again to close the overlay options list...");
-            elementUtils.click(privilegesDropdown, 5);
-            // Wait for the dropdown options to be invisible/hidden
-            WebDriverWait waitClose = new WebDriverWait(driver, Duration.ofSeconds(5));
-            waitClose.until(ExpectedConditions.invisibilityOfElementLocated(dropdownOptionsList));
-            logger.info("Privileges dropdown overlay closed successfully.");
-        } catch (Exception e) {
-            logger.warn("Could not click privileges dropdown trigger to close overlay, or overlay did not hide: {}",
-                    e.getMessage());
+            List<WebElement> elements = driver.findElements(dropdownOptionsList);
+            for (WebElement el : elements) {
+                if (el.isDisplayed()) {
+                    isOverlayVisible = true;
+                    break;
+                }
+            }
+        } catch (Exception e) {}
+
+        if (isOverlayVisible) {
+            try {
+                logger.info("Dropdown overlay is still open. Clicking trigger to close...");
+                elementUtils.click(privilegesDropdown, 5);
+                WebDriverWait waitClose = new WebDriverWait(driver, Duration.ofSeconds(5));
+                waitClose.until(ExpectedConditions.invisibilityOfElementLocated(dropdownOptionsList));
+                logger.info("Privileges dropdown overlay closed successfully.");
+            } catch (Exception e) {
+                logger.warn("Failed to close dropdown overlay via trigger click: {}. Trying to send ESCAPE key...", e.getMessage());
+                try {
+                    new org.openqa.selenium.interactions.Actions(driver).sendKeys(org.openqa.selenium.Keys.ESCAPE).perform();
+                } catch (Exception ex) {}
+            }
+        } else {
+            logger.info("Dropdown overlay is already closed.");
         }
     }
 
@@ -178,14 +193,32 @@ public class AddProviderModal extends BasePage {
         logger.info("Selecting first available option from privileges dropdown: '{}'", targetOption.getText());
         elementUtils.clickElement(targetOption);
 
+        boolean isOverlayVisible = false;
         try {
-            logger.info("Clicking privileges dropdown trigger again to close the overlay options list...");
-            elementUtils.click(privilegesDropdown, 5);
-            WebDriverWait waitClose = new WebDriverWait(driver, Duration.ofSeconds(5));
-            waitClose.until(ExpectedConditions.invisibilityOfElementLocated(dropdownOptionsList));
-        } catch (Exception e) {
-            logger.warn("Could not click privileges dropdown trigger to close overlay, or overlay did not hide: {}",
-                    e.getMessage());
+            List<WebElement> elements = driver.findElements(dropdownOptionsList);
+            for (WebElement el : elements) {
+                if (el.isDisplayed()) {
+                    isOverlayVisible = true;
+                    break;
+                }
+            }
+        } catch (Exception e) {}
+
+        if (isOverlayVisible) {
+            try {
+                logger.info("Dropdown overlay is still open. Clicking trigger to close...");
+                elementUtils.click(privilegesDropdown, 5);
+                WebDriverWait waitClose = new WebDriverWait(driver, Duration.ofSeconds(5));
+                waitClose.until(ExpectedConditions.invisibilityOfElementLocated(dropdownOptionsList));
+                logger.info("Privileges dropdown overlay closed successfully.");
+            } catch (Exception e) {
+                logger.warn("Failed to close dropdown overlay via trigger click: {}. Trying to send ESCAPE key...", e.getMessage());
+                try {
+                    new org.openqa.selenium.interactions.Actions(driver).sendKeys(org.openqa.selenium.Keys.ESCAPE).perform();
+                } catch (Exception ex) {}
+            }
+        } else {
+            logger.info("Dropdown overlay is already closed.");
         }
     }
 
@@ -264,8 +297,28 @@ public class AddProviderModal extends BasePage {
 
     private void sendKeysToVisible(By locator, String value, int timeout) {
         WebElement visibleElement = getVisibleElement(locator, timeout);
-        visibleElement.clear();
-        visibleElement.sendKeys(value);
+        
+        try {
+            ((org.openqa.selenium.JavascriptExecutor) driver)
+                    .executeScript("arguments[0].scrollIntoView({block: 'center'});", visibleElement);
+            Thread.sleep(150);
+        } catch (Exception e) {
+            logger.warn("Failed to scroll element into view: {}", e.getMessage());
+        }
+
+        try {
+            visibleElement.clear();
+            visibleElement.sendKeys(value);
+        } catch (Exception e) {
+            logger.warn("Standard sendKeys failed on {} due to: {}. Trying JavaScript fallback...", locator, e.getMessage());
+            try {
+                ((org.openqa.selenium.JavascriptExecutor) driver)
+                        .executeScript("arguments[0].value = arguments[1];", visibleElement, value);
+            } catch (Exception ex) {
+                logger.error("JavaScript fallback sendKeys also failed: {}", ex.getMessage());
+                throw ex;
+            }
+        }
 
         // Dispatch React/Angular input events to ensure form state updates
         try {

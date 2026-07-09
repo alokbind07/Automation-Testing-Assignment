@@ -17,6 +17,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 import java.lang.reflect.Method;
 import java.time.Duration;
@@ -48,6 +49,7 @@ public class BaseTest {
         logger.info("Initializing browser: {} (Headless: {})", browser, headless);
         switch (browser) {
             case "chrome" -> {
+                WebDriverManager.chromedriver().setup();
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--start-maximized");
                 options.addArguments("--disable-notifications");
@@ -65,6 +67,7 @@ public class BaseTest {
                 }
             }
             case "firefox" -> {
+                WebDriverManager.firefoxdriver().setup();
                 FirefoxOptions options = new FirefoxOptions();
                 if (headless) {
                     options.addArguments("-headless");
@@ -79,6 +82,7 @@ public class BaseTest {
                 }
             }
             case "edge" -> {
+                WebDriverManager.edgedriver().setup();
                 EdgeOptions options = new EdgeOptions();
                 options.addArguments("--start-maximized");
                 if (headless) {

@@ -23,9 +23,26 @@ public class ConfigReader {
     }
 
     public static String getProperty(String key) {
-        String value = properties.getProperty(key);
+        // 1. Check System properties (e.g., -Dkey=value)
+        String value = System.getProperty(key);
+        if (value != null && !value.trim().isEmpty()) {
+            return value;
+        }
+
+        // 2. Check System environment variables (e.g., key or UPPERCASE_KEY)
+        value = System.getenv(key);
+        if (value != null && !value.trim().isEmpty()) {
+            return value;
+        }
+        value = System.getenv(key.toUpperCase());
+        if (value != null && !value.trim().isEmpty()) {
+            return value;
+        }
+
+        // 3. Fallback to config.properties
+        value = properties.getProperty(key);
         if (value == null) {
-            logger.warn("Property '{}' not found in config.properties", key);
+            logger.warn("Property '{}' not found in System properties, Environment variables, or config.properties", key);
         }
         return value;
     }

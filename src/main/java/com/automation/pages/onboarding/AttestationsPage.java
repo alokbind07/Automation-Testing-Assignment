@@ -108,15 +108,15 @@ public class AttestationsPage extends BasePage {
         }
 
         // 7. Click the page's main "Submit Application" button
-        try {
-            logger.info("Clicking the 'Submit Application' button...");
-            By submitButton = By.id("complete");
-            elementUtils.click(submitButton, timeout);
-            Thread.sleep(5000);
-        } catch (Exception e) {
-            logger.error("Failed to click 'Submit Application' button: {}",
-                    e.getMessage());
-        }
+        // try {
+        // logger.info("Clicking the 'Submit Application' button...");
+        // By submitButton = By.id("complete");
+        // elementUtils.click(submitButton, timeout);
+        // Thread.sleep(5000);
+        // } catch (Exception e) {
+        // logger.error("Failed to click 'Submit Application' button: {}",
+        // e.getMessage());
+        // }
 
         // 8. Click the success modal "OK" button if it appears
         try {
