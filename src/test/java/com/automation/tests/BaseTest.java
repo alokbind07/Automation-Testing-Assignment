@@ -17,7 +17,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 import java.lang.reflect.Method;
 import java.time.Duration;
@@ -49,11 +48,19 @@ public class BaseTest {
         logger.info("Initializing browser: {} (Headless: {})", browser, headless);
         switch (browser) {
             case "chrome" -> {
-                WebDriverManager.chromedriver().setup();
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--start-maximized");
                 options.addArguments("--disable-notifications");
                 options.addArguments("--disable-popup-blocking");
+                options.addArguments("--no-sandbox");
+                options.addArguments("--disable-dev-shm-usage");
+                options.addArguments("--remote-allow-origins=*");
+                options.addArguments("--lang=en-US");
+                
+                java.util.Map<String, Object> prefs = new java.util.HashMap<>();
+                prefs.put("intl.accept_languages", "en-US");
+                options.setExperimentalOption("prefs", prefs);
+
                 if (headless) {
                     options.addArguments("--headless=new");
                     options.addArguments("--window-size=1920,1080");
@@ -67,8 +74,9 @@ public class BaseTest {
                 }
             }
             case "firefox" -> {
-                WebDriverManager.firefoxdriver().setup();
                 FirefoxOptions options = new FirefoxOptions();
+                options.addPreference("intl.accept_languages", "en-US");
+                
                 if (headless) {
                     options.addArguments("-headless");
                     options.addArguments("--width=1920");
@@ -82,9 +90,17 @@ public class BaseTest {
                 }
             }
             case "edge" -> {
-                WebDriverManager.edgedriver().setup();
                 EdgeOptions options = new EdgeOptions();
                 options.addArguments("--start-maximized");
+                options.addArguments("--no-sandbox");
+                options.addArguments("--disable-dev-shm-usage");
+                options.addArguments("--remote-allow-origins=*");
+                options.addArguments("--lang=en-US");
+                
+                java.util.Map<String, Object> prefs = new java.util.HashMap<>();
+                prefs.put("intl.accept_languages", "en-US");
+                options.setExperimentalOption("prefs", prefs);
+
                 if (headless) {
                     options.addArguments("--headless=new");
                     options.addArguments("--window-size=1920,1080");

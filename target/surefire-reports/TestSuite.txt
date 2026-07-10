@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 176.8 s <<< FAILURE! -- in TestSuite
-com.automation.tests.LoginTest.testSuccessfulLogin -- Time elapsed: 17.04 s <<< FAILURE!
+Tests run: 11, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 215.9 s <<< FAILURE! -- in TestSuite
+com.automation.tests.LoginTest.testSuccessfulLogin -- Time elapsed: 32.45 s <<< FAILURE!
 java.lang.AssertionError: Dashboard failed to load! expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -39,7 +39,7 @@ java.lang.AssertionError: Dashboard failed to load! expected [true] but found [f
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.automation.tests.OnboardingTest.testSuccessfulOnboarding -- Time elapsed: 17.00 s <<< FAILURE!
+com.automation.tests.OnboardingTest.testSuccessfulOnboarding -- Time elapsed: 31.72 s <<< FAILURE!
 java.lang.AssertionError: Dashboard failed to load! expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)

@@ -119,7 +119,9 @@ public class OnboardingTest extends BaseTest {
         personalInformationPage.clickSaveAndNext();
 
         ReportUtils.logInfo("Waiting for Additional Basic Information page to load...");
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        String timeoutStr = ConfigReader.getProperty("timeout");
+        int timeout = (timeoutStr != null) ? Integer.parseInt(timeoutStr) : 30;
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("homeline1")));
 
         try {
@@ -186,10 +188,11 @@ public class OnboardingTest extends BaseTest {
         ReportUtils.logInfo("Waiting for Affiliations page to load...");
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("Employer0")));
 
+        String currentDateStr = java.time.format.DateTimeFormatter.ofPattern("MMddyyyy").format(java.time.LocalDate.now());
         ReportUtils.logInfo("Filling Affiliations & Work History form details...");
         AffiliationsPage affiliationsPage = new AffiliationsPage(driver);
         affiliationsPage.fillAffiliationsInformation(
-                "California Health Center", "07012017", "California", "Los Angeles", "12312023");
+                "California Health Center", "07012017", "California", "Los Angeles", currentDateStr);
 
         ReportUtils.logInfo("Clicking Affiliations Save & Next...");
         affiliationsPage.clickAffiliationsSaveAndNext();
