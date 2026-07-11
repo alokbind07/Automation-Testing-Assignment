@@ -26,6 +26,13 @@
             <version>${selenium.version}</version>
         </dependency>
 
+        <!-- WebDriverManager for automatic driver compatibility management -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.8.0</version>
+        </dependency>
+
 
         <!-- TestNG -->
         <dependency>

@@ -12,15 +12,6 @@
           <include name="tearDownSuite"/>
         </methods>
       </class> <!-- com.automation.tests.OnboardingTest -->
-      <class name="com.automation.tests.LoginTest">
-        <methods>
-          <include name="setupSuite"/>
-          <include name="setupTest"/>
-          <include name="testSuccessfulLogin"/>
-          <include name="tearDownTest"/>
-          <include name="tearDownSuite"/>
-        </methods>
-      </class> <!-- com.automation.tests.LoginTest -->
     </classes>
   </test> <!-- Onboarding Workflows(failed) -->
 </suite> <!-- Failed suite [Provider Passport Suite] -->
